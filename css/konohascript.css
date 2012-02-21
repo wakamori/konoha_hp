@@ -1,0 +1,75 @@
+.konohascript-header {
+	position:relative;
+	top:0px;
+	left:0px;
+	height:130px;
+	width:100%;
+	text-color:black;
+	text-align:center;
+	font: bold 38px/1.7 "arial black", sans-serif;
+	font-family:Arial, Helvetica, sans-serif;
+	background-color:#3cb371;
+	background : -webkit-gradient(linear, left top, left bottom,
+								  color-stop(0, #eefff0),
+								  color-stop(1, #ffffff));
+	background : -moz-linear-gradient(center top, #eefff0 0%,
+									  #ffffff 100%);
+}
+
+.konohascript-menu {
+	position:relative;
+	height:50px;
+	left:0px;
+	background-color:black;
+}
+
+.konohascript-menu-wrapper {
+	width:1000px;
+	display:block;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+.konohascript-menu-wrapper div {
+    position:relative;
+	color: #c9c9c9;
+	text-align:center;
+	width:19%;
+	display: inline-block;
+	padding:10px 5px 0 0;
+	font-size:24px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+.konohascript-menu-wrapper div:hover {
+	cursor:pointer;
+	color: #fff;
+}
+
+.konohascript-contents {
+	width:1000px;
+	display:block;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+.konohascript-footer {
+	position:relative;
+	top:0px;
+	left:0px;
+	height:100px;
+	width:100%;
+	border-top:1px solid black;
+	text-color:black;
+	text-align:center;
+	font: bold 18px/1.7 "arial black", sans-serif;
+	font-family:Arial, Helvetica, sans-serif;
+	background-color:#3cb371;
+	background : -webkit-gradient(linear, left top, left bottom,
+								  color-stop(0, #eefff0),
+								  color-stop(1, #ffffff));
+	background : -moz-linear-gradient(center top, #eefff0 0%,
+									  #ffffff 100%);	
+}
