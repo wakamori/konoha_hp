@@ -1,4 +1,4 @@
-.konohascript-header {
+#konohascript-header {
 	position:relative;
 	top:0px;
 	left:0px;
@@ -16,14 +16,14 @@
 									  #ffffff 100%);
 }
 
-.konohascript-menu {
+#konohascript-menu {
 	position:relative;
 	height:50px;
 	left:0px;
 	background-color:black;
 }
 
-.konohascript-menu-wrapper {
+#konohascript-menu-wrapper {
 	width:1000px;
 	display:block;
 	margin-right: auto;
@@ -31,7 +31,7 @@
 	text-align: center;
 }
 
-.konohascript-menu-wrapper div {
+#konohascript-menu-wrapper div {
     position:relative;
 	color: #c9c9c9;
 	text-align:center;
@@ -42,12 +42,12 @@
 	font-family:Arial, Helvetica, sans-serif;
 }
 
-.konohascript-menu-wrapper div:hover {
+#konohascript-menu-wrapper div:hover {
 	cursor:pointer;
 	color: #fff;
 }
 
-.konohascript-contents {
+#konohascript-contents {
 	width:1000px;
 	display:block;
 	margin-right: auto;
@@ -55,7 +55,7 @@
 	text-align: center;
 }
 
-.konohascript-footer {
+#konohascript-footer {
 	position:relative;
 	top:0px;
 	left:0px;
