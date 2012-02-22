@@ -1,3 +1,8 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
 #konohascript-header {
 	position:relative;
 	top:0px;
@@ -71,5 +76,5 @@
 								  color-stop(0, #eefff0),
 								  color-stop(1, #ffffff));
 	background : -moz-linear-gradient(center top, #eefff0 0%,
-									  #ffffff 100%);	
+									  #ffffff 100%);
 }
