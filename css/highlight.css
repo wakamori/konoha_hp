@@ -3,7 +3,10 @@
 
 .highlight {
   font-weight: bold;
-  font-size: large;
+}
+
+.highlight.konoha {
+  font-size: x-large;
 }
 
 /* ----- for highlight.js ----- */

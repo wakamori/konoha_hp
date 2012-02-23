@@ -78,7 +78,11 @@ function uh_modules_init() {
 
 	$("p")
 		.each(function() {
-			$(this).highlight("Konoha");
+			var p = $(this);
+			var keywords = ["Konoha", "JavaScript", "Java", "Ruby", "C++"];
+			jQuery.each(keywords, function() {
+				p.highlight(this);
+			});
 		});
 	hljs.initHighlighting();
 };
