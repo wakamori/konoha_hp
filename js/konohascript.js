@@ -75,5 +75,10 @@ function uh_modules_init() {
 							   border:       "2px double rgba(255,255,255,1.0)",
 							   boxShadow:    "1px 1px 3px rgba(0,0,0,0.8)",
 							   borderRadius: "8px" })));
+
+	$("p")
+		.each(function() {
+			$(this).highlight("Konoha");
+		});
 	hljs.initHighlighting();
 };

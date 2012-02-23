@@ -1,4 +1,14 @@
-﻿/*
+﻿
+/* ----- for jquery.highlight.js ----- */
+
+.highlight {
+  font-weight: bold;
+  font-size: large;
+}
+
+/* ----- for highlight.js ----- */
+
+/*
 
 Dark style from softwaremaniacs.org (c) Ivan Sagalaev <Maniac@SoftwareManiacs.Org>
 
