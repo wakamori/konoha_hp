@@ -19,14 +19,12 @@
 			this._validate();
 			this.current = this.options.current;
 			this.$preloader.appendTo( this.$el );
-			var instance = this; 
+			var instance = this;
 			this._preloadImages( function() {
 				instance.$preloader.hide();
 				instance.$images.eq( instance.current ).show();
 				instance._initEvents();
-			
 			});
-			
 		},
 		_preloadImages : function( callback ) {
 			//console.log("Slideshow.preloadImage.");
@@ -64,13 +62,13 @@
 			this.isAnimating = true;
 			var $curr = this.$images.eq( this.current ).css( 'z-index' , 998 ),
 			instance = this;
-			( dir === 'prev') 
+			( dir === 'prev')
 				? ( this.current === 0 ) ? this.current = this.imgCount - 1 : --this.current
 				: ( this.current === this.imgCount - 1 ) ? this.current = 0 : ++this.current;
 			this.$images.eq( this.current ).show();
 			$curr.fadeOut( 400, function() {
 				$(this).css( 'z-index' , 1 );
-				instance.isAnimating	= false;
+				instance.isAnimating = false;
 			});
 		}
 	};
@@ -79,7 +77,6 @@
 			console.error( message );
 		}
 	};
-	
 	$.fn.slideshow = function( options ) {
 		if ( typeof options === 'string' ) {
 			var args = Array.prototype.slice.call( arguments, 1 );
@@ -96,7 +93,7 @@
 				}
 				instance[ options ].apply( instance, args );
 			});
-		} 
+		}
 		else {
 			this.each(function() {
 				var instance = $.data( this, 'slideshow' );
