@@ -49,18 +49,30 @@ function goccy_modules_init() {
 };
 
 function uh_modules_init() {
-	$(".uh-halfbox")
+	$(".uh-columnbox")
 		.each(function() {
-			$(this).children()
-				.css({ float:  "left",
-					   textAlign: "left",
-					   width: "49%" })
+			var children = $(this).children();
+			var par = Math.floor((100/(children.size()))-1)+"%";
+			children
+				.css({ width: par,
+					   float: "left" })
 				.filter(":last-child")
 				.css("float", "right");
-		})
-		.append(
-			$("<div>")
-				.css("clear", "both"));
+			$(this)
+				.append(
+					$("<div>")
+						.css("clear", "both"));
+		});
+
+	$("p")
+		.each(function() {
+			var p = $(this);
+			p.css("text-align", "left");
+			var keywords = ["Konoha", "JavaScript", "Java", "Ruby", "Python", "Perl", "C++", "C"];
+			jQuery.each(keywords, function() {
+				p.highlight(this);
+			});
+		});
 
 	$(".uh-script")
 		.wrapInner(
@@ -76,13 +88,5 @@ function uh_modules_init() {
 							   boxShadow:    "1px 1px 3px rgba(0,0,0,0.8)",
 							   borderRadius: "8px" })));
 
-	$("p")
-		.each(function() {
-			var p = $(this);
-			var keywords = ["Konoha", "JavaScript", "Java", "Ruby", "C++"];
-			jQuery.each(keywords, function() {
-				p.highlight(this);
-			});
-		});
 	hljs.initHighlighting();
 };
