@@ -52,7 +52,7 @@ function uh_modules_init() {
 	$(".uh-columnbox")
 		.each(function() {
 			var children = $(this).children();
-			var par = Math.floor((100/(children.size()))-1)+"%";
+			var par = (100/(children.size())-1.0)+"%";
 			children
 				.css({ width: par,
 					   float: "left" })
