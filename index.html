@@ -10,18 +10,30 @@
 	<link rel="stylesheet" type="text/css" href="css/konohascript.css"/>
   </head>
   <body id="body">
-	<div id="konohascript-header"></div>
-	<div id="konohascript-menu">
-	  <div>Download</div>
-	  <div>Demo</div>
-	  <div>Document</div>
-	  <div>Library</div>
-	  <div>News</div>
+	<div class="konoha-header"></div>
+	<div class="konoha-menu">
+	  <span>Download</span>
+	  <span>Demo</span>
+	  <span>Document</span>
+	  <span>Library</span>
+	  <span>News</span>
 	</div>
-	<div id="konohascript-contents">
-	  <p>HogeHoge</p>
+	<div class="konoha-contents">
+	  <div class="yoan-slideshow"></div>
+	  <div class="uh-halfbox">
+		<div>
+		  <p>Konohaは静的型付けのスクリプト言語です</p>
+		</div>
+		<div class="uh-script">$ konoha
+konoha 1.0(beta) svn
+options: iconv bmgc thcode sqlite3 syslog thread
+
+>>> print "Hello, world!"
+((eval):1) Hello, world!</div>
+	  </div>
+	  <div class="goccy-timeline"></div>
 	</div>
-	<div id="konohascript-footer"></div>
+	<div class="konoha-footer"></div>
 
 	<!-------- scripts --------->
 	<!--[if lt IE 9]>

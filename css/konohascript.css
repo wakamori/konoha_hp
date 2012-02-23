@@ -1,80 +1,91 @@
 body {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
+    font-family: arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    color: black;
+    height: 100%;
+    background-color:#3cb371;
+    background : -webkit-gradient(linear, left top, left bottom,
+                                  color-stop(0, #eefff0),
+                                  color-stop(0.2, #ffffff),
+                                  color-stop(0.8, #ffffff),
+                                  color-stop(1, #eefff0));
+    background : -moz-linear-gradient(center top,
+                                  #eefff0 0%,
+                                  #ffffff 20%,
+                                  #ffffff 80%,
+                                  #eefff0 100%);
+    display: none; /* turn this if loading finished */
 }
 
-#konohascript-header {
-	position:relative;
-	top:0px;
-	left:0px;
-	height:130px;
-	width:100%;
-	text-color:black;
-	text-align:center;
-	font: bold 38px/1.7 "arial black", sans-serif;
-	font-family:Arial, Helvetica, sans-serif;
-	background-color:#3cb371;
-	background : -webkit-gradient(linear, left top, left bottom,
-								  color-stop(0, #eefff0),
-								  color-stop(1, #ffffff));
-	background : -moz-linear-gradient(center top, #eefff0 0%,
-									  #ffffff 100%);
+.konoha-header {
+    text-align: left;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    margin: 10px 0;
 }
 
-#konohascript-menu {
-	position:relative;
-	height:50px;
-	left:0px;
-	background-color:black;
+.konoha-header-logo {
+    position: relative;
+    height : 48px;
+    margin: 12px;
 }
 
-#konohascript-menu-wrapper {
-	width:1000px;
-	display:block;
-	margin-right: auto;
-	margin-left: auto;
-	text-align: center;
+.konoha-header div span {
+    position : relative;
+    font-weight: bold;
+    display: list-item;
+    list-style-type: none;
 }
 
-#konohascript-menu-wrapper div {
-    position:relative;
-	color: #c9c9c9;
-	text-align:center;
-	width:19%;
-	display: inline-block;
-	padding:10px 5px 0 0;
-	font-size:24px;
-	font-family:Arial, Helvetica, sans-serif;
+.konoha-header-title {
+    font-size: 48px;
 }
 
-#konohascript-menu-wrapper div:hover {
-	cursor:pointer;
-	color: #fff;
+.konoha-menu {
+    position: relative;
+    height: 24px;
+    background: black;
 }
 
-#konohascript-contents {
-	width:1000px;
-	display:block;
-	margin-right: auto;
-	margin-left: auto;
-	text-align: center;
+.konoha-menu-wrapper {
+    width: 924px;
+    height: 100%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
 }
 
-#konohascript-footer {
-	position:relative;
-	top:0px;
-	left:0px;
-	height:100px;
-	width:100%;
-	border-top:1px solid black;
-	text-color:black;
-	text-align:center;
-	font: bold 18px/1.7 "arial black", sans-serif;
-	font-family:Arial, Helvetica, sans-serif;
-	background-color:#3cb371;
-	background : -webkit-gradient(linear, left top, left bottom,
-								  color-stop(0, #eefff0),
-								  color-stop(1, #ffffff));
-	background : -moz-linear-gradient(center top, #eefff0 0%,
-									  #ffffff 100%);
+.konoha-menu-wrapper span {
+    line-height: 24px;   /* must be same as menu's height */
+    color: #c9c9c9;
+    width: 20%;   /* menu width / item count */
+    display: inline-block;
+    font-size: 12px;
+}
+
+.konoha-menu-wrapper span:hover {
+    cursor: pointer;
+    color: #ffffff;
+    background: #3f3f3f;
+}
+
+.konoha-contents {
+    width: 924px;
+    display: block;
+    margin: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.konoha-footer {
+    position: relative;
+    height: 100px;
+    border-top:1px solid black;
 }
