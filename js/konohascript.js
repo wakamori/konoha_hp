@@ -1,3 +1,6 @@
+
+; /* <- DON'T ERASE THIS */
+
 function konohascript_init()
 {
 	$(".konoha-header")
@@ -27,11 +30,31 @@ function konohascript_init()
 		.wrapAll(
 			$("<div>")
 				.attr("class", "konoha-menu-wrapper"));
+
+	$(".konoha-footer")
+		.html("Copyright © 2012 Konoha Project");
+};
+
+function yoan_modules_init() {
+	$(".cn-slideshow").slideshow();
+};
+
+function goccy_modules_init() {
+	/* dummy element */
+	$(".goccy-timeline")
+		.text("timeline")
+		.css({ width:      "100%",
+			   height:     "256px",
+			   background: "lightgray"});
+};
+
+function uh_modules_init() {
 	$(".uh-halfbox")
 		.each(function() {
 			$(this).children()
 				.css({ float:  "left",
-					   margin: "20px" })
+					   textAlign: "left",
+					   width: "49%" })
 				.filter(":last-child")
 				.css("float", "right");
 		})
@@ -42,27 +65,15 @@ function konohascript_init()
 	$(".uh-script")
 		.wrapInner(
 			$("<pre>")
-				.css({ textAlign:    "left",
-					   fontWeight:   "bold",
-					   fontSize:     "13px",
-					   fontFamily:   "monaco",
-					   color:        "white",
-					   padding:      "10px",
-					   background:   "-webkit-radial-gradient(center, ellipse cover, rgba(50,50,50,0.8) 0%,rgba(35,35,35,0.8) 47%,rgba(5,5,5,0.8) 100%)",
-					   /* FIXME: for moz */
-					   border:      "1px double white",
-					   boxShadow:   "1px 1px 3px rgba(0,0,0,0.2)",
-					   borderRadius: "8px" }));
-
-	$(".goccy-timeline")
-		.text("timeline")
-		.css({ width:      "100%",
-			   height:     "256px",
-			   background: "lightgray"});
-
-	$(".konoha-footer")
-		.html("Copyright © 2012 Konoha Project");
-
-	$(document.body)
-		.css("display", "block"); /* display all elements */
-}
+				.wrapInner(
+					$("<code>")
+						.attr("class", "python")
+						.css({ textAlign:    "left",
+							   fontFamily:   "monaco",
+							   fontSize:     "13px",
+							   padding:      "10px",
+							   border:       "2px double rgba(255,255,255,1.0)",
+							   boxShadow:    "1px 1px 3px rgba(0,0,0,0.8)",
+							   borderRadius: "8px" })));
+	hljs.initHighlighting();
+};

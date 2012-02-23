@@ -2,9 +2,7 @@
     width: 896px;
     height: 256px;
     position: relative;
-    margin: 0 auto;
     background: #fff;
-    border-top: 5px solid #d0ab47;
     -webkit-box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
     -moz-box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
     box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
