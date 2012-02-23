@@ -30,7 +30,8 @@ function konohascript_init()
 	$(".uh-halfbox")
 		.each(function() {
 			$(this).children()
-				.css("float", "left")
+				.css({ float:  "left",
+					   margin: "20px" })
 				.filter(":last-child")
 				.css("float", "right");
 		})
@@ -49,7 +50,8 @@ function konohascript_init()
 					   padding:      "10px",
 					   background:   "-webkit-radial-gradient(center, ellipse cover, rgba(50,50,50,0.8) 0%,rgba(35,35,35,0.8) 47%,rgba(5,5,5,0.8) 100%)",
 					   /* FIXME: for moz */
-					   boxShadow:    "4px 4px rgba(60, 60, 60, 0.4)",
+					   border:      "1px double white",
+					   boxShadow:   "1px 1px 3px rgba(0,0,0,0.2)",
 					   borderRadius: "8px" }));
 
 	$(".goccy-timeline")

@@ -9,8 +9,8 @@ body {
     background-color:#3cb371;
     background : -webkit-gradient(linear, left top, left bottom,
                                   color-stop(0, #eefff0),
-                                  color-stop(0.2, #ffffff),
-                                  color-stop(0.8, #ffffff),
+                                  color-stop(0.2, #fafafa),
+                                  color-stop(0.8, #fafafa),
                                   color-stop(1, #eefff0));
     background : -moz-linear-gradient(center top,
                                   #eefff0 0%,
@@ -53,7 +53,7 @@ body {
 }
 
 .konoha-menu-wrapper {
-    width: 924px;
+    width: 896px;
     height: 100%;
     display: block;
     margin-right: auto;
@@ -76,7 +76,7 @@ body {
 }
 
 .konoha-contents {
-    width: 924px;
+    width: 896px;
     display: block;
     margin: 20px;
     margin-right: auto;
@@ -87,5 +87,7 @@ body {
 .konoha-footer {
     position: relative;
     height: 100px;
+    color: white;
+    background: black;
     border-top:1px solid black;
 }
