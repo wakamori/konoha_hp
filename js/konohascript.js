@@ -36,10 +36,9 @@ function konohascript_init()
 
 	$(".uh-halfbox")
 		.each(function() {
-			$(this).children("div")
-				.css({ float:     "right",
-					   textAlign: "left" })
-				.filter(":first-child")
+			$(this).children()
+				.css("float", "left")
+				.filter(":last-child")
 				.css("float", "right");
 		})
 		.append(
