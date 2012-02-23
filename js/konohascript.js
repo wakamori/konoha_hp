@@ -27,9 +27,6 @@ function konohascript_init()
 		.wrapAll(
 			$("<div>")
 				.attr("class", "konoha-menu-wrapper"));
-
-	$(".cn-slideshow").slideshow();
-
 	$(".uh-halfbox")
 		.each(function() {
 			$(this).children()
