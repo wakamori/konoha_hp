@@ -28,11 +28,7 @@ function konohascript_init()
 			$("<div>")
 				.attr("class", "konoha-menu-wrapper"));
 
-	$(".yoan-slideshow")
-		.text("slideshow")
-		.css({ width:      "100%",
-			   height:     "256px",
-			   background: "lightgray"});
+	$('.cn-slideshow').slideshow();
 
 	$(".uh-halfbox")
 		.each(function() {

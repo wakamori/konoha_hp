@@ -8,6 +8,7 @@
 	<title>KonohaScript</title>
 	<link rel="shortcut icon" href="favicon.ico" >
 	<link rel="stylesheet" type="text/css" href="css/konohascript.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
   <body id="body">
 	<div class="konoha-header"></div>
@@ -19,7 +20,14 @@
 	  <span>News</span>
 	</div>
 	<div class="konoha-contents">
-	  <div class="yoan-slideshow"></div>
+	  <div id="cn-slideshow" class="cn-slideshow">
+		<div class="cn-images">
+		  <img src="images/large/1.jpg" alt="image01" title="Beautiful Scenery 1" data-thumb="images/thumbs/1.jpg" style="display:block;"/>
+		  <img src="images/large/2.jpg" alt="image02" title="Beautiful Scenery 2" data-thumb="images/thumbs/2.jpg"/>
+		  <img src="images/large/3.jpg" alt="image03" title="Beautiful Scenery 3" data-thumb="images/thumbs/3.jpg"/>
+		  <img src="images/large/4.jpg" alt="image04" title="Beautiful Scenery 4" data-thumb="images/thumbs/4.jpg"/>
+		</div>
+	  </div>
 	  <div class="uh-halfbox">
 		<div>
 		  Konohaは静的型付けのスクリプト言語です
@@ -41,10 +49,11 @@ options: iconv bmgc thcode sqlite3 syslog thread
 		<script src="js/IE9.js"></script>
 	<![endif]-->
 	<!---- jquery & plugins ---->
-	<script src="js/jquery.js"></script>
-	<script src="js/jquery-ui-1.8.13.custom.min.js" type="text/javascript" charset="utf-8"></script>
-	<script src="http://api.html5media.info/1.1.5/html5media.min.js"></script>
-	<script src="js/konohascript.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.8.13.custom.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/jquery.slideshow.js"></script>
+	<script type="text/javascript" src="http://api.html5media.info/1.1.5/html5media.min.js"></script>
+	<script type="text/javascript" src="js/konohascript.js"></script>
 	<!------- my js code ------->
 	<script src="js/main.js"></script>
   </body>
