@@ -37,7 +37,7 @@ function konohascript_init()
 		.each(function() {
 			var p = $(this);
 			var keywords = ["Konoha", "JavaScript", "Java", "Ruby", "Python", "Perl", "C++"];
-			jQuery.each(keywords, function() {
+			$.each(keywords, function() {
 				p.highlight(this);
 			});
 		});
@@ -132,6 +132,10 @@ function uh_modules_init() {
 		});
 
 	$(".uh-script")
+		.each(function() {
+			var script = $(this).text();
+			$(this).text($.trim(script));
+		})
 		.wrapInner(
 			$("<pre>")
 				.wrapInner(
