@@ -137,15 +137,7 @@ function uh_modules_init() {
 			$("<pre>")
 				.wrapInner(
 					$("<code>")
-						.attr("class", "python")
-						.css({ textAlign:    "left",
-							   fontFamily:   "monaco",
-							   fontSize:     "13px",
-							   padding:      "10px",
-							   margin:       "15px",
-							   border:       "2px double rgba(255,255,255,1.0)",
-							   boxShadow:    "1px 1px 3px rgba(0,0,0,0.8)",
-							   borderRadius: "8px" })));
+						.attr("class", "python uh-script-interactive")));
 
 	hljs.initHighlighting();
 };
