@@ -27,50 +27,70 @@ function konohascript_init()
 				.css("clear", "both"));
 
 	$(".konoha-menu span")
-		.css({ width: (100/($(".konoha-menu span").size())+"%"),
-			   height: ($(".konoha-menu").css("height")-1) })
+		.attr("class", "konoha-menu-item")
+		.css("width", (100/($(".konoha-menu-item").size())+"%"))
 		.wrapAll(
 			$("<div>")
 				.attr("class", "konoha-menu-wrapper"));
 
 	$(".konoha-footer")
-		.append(
+/*		.append(
 			$("<div>")
-				.attr("class", "uh-columnbox")
-				.each(function(){
-					var container = $(this);
-					var items = $(".konoha-menu div span");
-					jQuery.each(items, function() {
-						var text = $(this).text();
-						container
-							.append(
-								$("<div>")
-									.css("text-align", "center")
-									.append(
-										$("<ul>")
-											.attr("class", "konoha-footer-list")
-											.append(
-												$("<li>")
-													.attr("class", "konoha-footer-lhead")
-													.text(text))
-											.each(function() {
-												/* ----- dummy generation ----- */
-												var list = $(this);
-												var count = Math.floor(Math.random() * 4) + 1;
-												for (var i = 0; i < count; i++) {
-													list
+				.css("padding-bottom", "50px")
+				.append(
+					$("<div>")
+						.css({ float: "left",
+							   width: "30%" })
+						.append(
+							$("<img>")
+								.attr("src", "images/logo.png")
+								.css("width", "50px"))
+						.append(
+							$("<span>")
+								.text("Konoha")
+								.css({ fontSize:   "28px",
+									   fontWeight: "bold",
+									   marginLeft: "10px" })))
+				.append(
+					$("<div>")
+						.css({ float: "left",
+							   width: "70%" })
+						.append(
+							$("<div>")
+								.attr("class", "uh-columnbox")
+								.each(function(){
+									var container = $(this);
+									$(".konoha-menu-item")
+										.each(function() {
+											var text = $(this).text();
+											container
+												.append(
+													$("<div>")
 														.append(
-															$("<li>")
-																.attr("class", "konoha-footer-litem")
-																.text("dummy"));
-												}
-											})));
-					});
-				}))
+															$("<ul>")
+																.css({ textAlign:     "left",
+																	   listStyleType: "none" })
+																.each(function() {
+																	$(this)
+																		.append(
+																			$("<li>")
+																				.css({ fontWeight:   "bold",
+																					   marginBottom: "3px" })
+																				.text(text))
+																		.append(
+																			$("<li>")
+																				.css("margin", "1px 12px")
+																				.text("dummy"));
+																})));
+										});
+								})))
+				.append(
+					$("<div>")
+						.css("clear", "both"))) */
 		.append(
 			$("<div>")
 				.attr("class", "konoha-footer-copyright")
-				.html("Copyright © 2012 Konoha Project"))
+				.html("Copyright © 2012 Konoha Project"));
 };
 
 function yoan_modules_init() {

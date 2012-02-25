@@ -1,129 +1,90 @@
+.aligned-page-content {
+  width: 896px;
+  margin-right: auto;
+  margin-left: auto;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
-    margin: 0;
-    padding: 0;
-    font-family: arial, Helvetica, sans-serif;
-    font-size: 14px;
-    text-align: center;
-    color: black;
-    height: 100%;
-    background: #eff5f2;
-  /*
-    background : -webkit-gradient(linear, left top, left bottom,
-                                  color-stop(0, #eefff0),
-                                  color-stop(0.2, #fafafa),
-                                  color-stop(0.8, #fafafa),
-                                  color-stop(1, #eefff0));
-    background : -moz-linear-gradient(center top,
-                                  #eefff0 0%,
-                                  #ffffff 20%,
-                                  #ffffff 80%,
-                                  #eefff0 100%);*/
-    display: none; /* turn this if loading finished */
-}
+  font-family: arial, Helvetica, sans-serif;
+  font-size: 14px;
+  text-align: center;
+  color: black;
+  height: 100%;
+  background: #eff5f2;
+  display: none;
+  /* turn this if loading finished */
 
+}
 body > * {
-    min-width: 896px;
+  width: 100%;
+  min-width: 896px;
 }
-
 .konoha-header {
-    text-align: left;
-    position: relative;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    background: #f5fbf5;
-    padding: 10px 0;
+  text-align: left;
+  background: #f5fbf5;
+  padding: 10px 0;
 }
-
-.konoha-header-logo {
-    position: relative;
-    height : 48px;
-    margin: 12px;
+.konoha-header > .konoha-header-logo {
+  height: 48px;
+  margin: 12px;
 }
-
-.konoha-header div span {
-    position : relative;
-    font-weight: bold;
-    text-shadow: 1px 1px 3px gray;
-    display: list-item;
-    list-style-type: none;
+.konoha-header > div span {
+  display: list-item;
+  list-style-type: none;
+  padding-left: 0px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px gray;
 }
-
-.konoha-header-title {
-    font-size: 48px;
+.konoha-header > div span.konoha-header-title {
+  font-size: 48px;
 }
-
 .konoha-menu {
-    position: relative;
-    width: 100%;
-    height: 20px;
-    background: black;
+  position: relative;
+  width: 100%;
+  height: 20px;
+  background: black;
 }
-
-.konoha-menu-wrapper {
-    width: 896px;
-    height: 100%;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
+.konoha-menu > .konoha-menu-wrapper {
+  width: 896px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 20px;
 }
-
-.konoha-menu-wrapper span {
-    color: #c9c9c9;
-    display: inline-block;
-    height: 20px; /* must be same as konoha-menu's height */
-    font-size: 12px;
+.konoha-menu > .konoha-menu-wrapper > span {
+  color: #c9c9c9;
+  display: inline-block;
+  height: 20px;
+  font-size: 12px;
 }
-
-.konoha-menu-wrapper span:hover {
-    cursor: pointer;
-    color: #ffffff;
+.konoha-menu > .konoha-menu-wrapper > span:hover {
+  cursor: pointer;
+  color: #ffffff;
 }
-
 .konoha-contents {
-    width: 896px;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-}
+  width: 896px;
+  margin-right: auto;
+  margin-left: auto;
+  opacity: 0;
+  /* turn this if loading finished */
 
+}
 .konoha-contents > * {
-    margin: 10px 0;
+  margin: 10px 0;
 }
-
 .konoha-footer {
-    position: relative;
-    height: 100%;
-    color: lightgray;
-    background: black;
-    text-align: center;
+  height: 100%;
+  padding: 30px 0;
+  color: lightgray;
+  background: black;
 }
-
-.konoha-footer div {
-    width: 896px;
-    margin-right: auto;
-    margin-left: auto;
+.konoha-footer > * {
+  width: 896px;
+  margin-right: auto;
+  margin-left: auto;
 }
-
-.konoha-footer-list {
-    text-align: left;
-    list-style-type: none;
-}
-
-.konoha-footer-lhead {
-    font-weight: bold;
-    color: white;
-    margin: 3px 0;
-}
-
-.konoha-footer-litem {
-    font-weight: normal;
-    margin: 1px;
-}
-
-.konoha-footer-copyright {
-    margin: 60px 0 20px 0;
-    font-size: small;
+.konoha-footer > *.konoha-footer-copyright {
+  font-size: small;
 }

@@ -1,0 +1,103 @@
+
+@content-width: 896px;
+@logo-height: 48px;
+@menu-height: 20px;
+
+.none-style-list(@left: 0px) {
+    list-style-type: none;
+	padding-left: @left;
+}
+
+.aligned-page-content {
+    width: @content-width;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    color: black;
+    height: 100%;
+    background: #eff5f2;
+    display: none; /* turn this if loading finished */
+
+    > * {
+        width: 100%;
+        min-width: @content-width;
+    }
+}
+
+.konoha-header {
+    text-align: left;
+    background: #f5fbf5;
+    padding: 10px 0;
+
+    > .konoha-header-logo {
+        height : @logo-height;
+        margin: 12px;
+    }
+    > div span {
+        display: list-item;
+        .none-style-list;
+        font-weight: bold;
+        text-shadow: 1px 1px 3px gray;
+
+        &.konoha-header-title {
+            font-size: @logo-height;
+        }
+    }
+}
+
+.konoha-menu {
+    position: relative;
+    width: 100%;
+    height: @menu-height;
+    background: black;
+
+    > .konoha-menu-wrapper {
+        .aligned-page-content;
+        height: @menu-height;
+
+        > span {
+            color: #c9c9c9;
+            display: inline-block;
+            height: @menu-height;
+            font-size: 12px;
+
+            &:hover {
+                cursor: pointer;
+                color:  #ffffff;
+            }
+        }
+    }
+}
+
+.konoha-contents {
+    .aligned-page-content;
+    opacity: 0; /* turn this if loading finished */
+
+    > * {
+        margin: 10px 0;
+	}
+}
+
+.konoha-footer {
+    height: 100%;
+    padding: 30px 0;
+    color: lightgray;
+    background: black;
+
+    > * {
+        .aligned-page-content;
+        &.konoha-footer-copyright {
+            font-size: small;
+        }
+    }
+}
