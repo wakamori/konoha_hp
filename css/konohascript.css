@@ -24,9 +24,7 @@ body {
   color: black;
   height: 100%;
   background: #eff5f2;
-  display: none;
-  /* turn this if loading finished */
-
+  display: none /* turn this if loading finished */;
 }
 body > * {
   width: 100%;
@@ -77,9 +75,7 @@ body > * {
   width: 896px;
   margin-right: auto;
   margin-left: auto;
-  opacity: 0;
-  /* turn this if loading finished */
-
+  opacity: 0 /* turn this if loading finished */;
 }
 .konoha-contents > * {
   margin: 10px 0;
