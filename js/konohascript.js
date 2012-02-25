@@ -33,6 +33,15 @@ function konohascript_init()
 			$("<div>")
 				.attr("class", "konoha-menu-wrapper"));
 
+	$(".konoha-contents p")
+		.each(function() {
+			var p = $(this);
+			var keywords = ["Konoha", "JavaScript", "Java", "Ruby", "Python", "Perl", "C++"];
+			jQuery.each(keywords, function() {
+				p.highlight(this);
+			});
+		});
+
 	$(".konoha-footer")
 /*		.append(
 			$("<div>")
@@ -120,16 +129,6 @@ function uh_modules_init() {
 				.append(
 					$("<div>")
 						.css("clear", "both"));
-		});
-
-	$("p")
-		.each(function() {
-			var p = $(this);
-			p.css("text-align", "left");
-			var keywords = ["Konoha", "JavaScript", "Java", "Ruby", "Python", "Perl", "C++"];
-			jQuery.each(keywords, function() {
-				p.highlight(this);
-			});
 		});
 
 	$(".uh-script")

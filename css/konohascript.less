@@ -5,7 +5,7 @@
 
 .none-style-list(@left: 0px) {
     list-style-type: none;
-	padding-left: @left;
+    padding-left: @left;
 }
 
 .aligned-page-content {
@@ -19,7 +19,7 @@
     font-family: monaco;
     font-size: 13px;
     padding: 10px;
-    margin: 10px;
+    margin: 5px;
     border: 2px double rgba(255,255,255,1.0);
     box-shadow: 1px 1px 3px rgba(0,0,0,0.8);
     border-radius: 8px;
@@ -50,7 +50,7 @@ body {
     background: #f5fbf5;
     padding: 10px 0;
 
-    > .konoha-header-logo {
+    > img.konoha-header-logo {
         height : @logo-height;
         margin: 12px;
     }
@@ -72,11 +72,11 @@ body {
     height: @menu-height;
     background: black;
 
-    > .konoha-menu-wrapper {
+    > div.konoha-menu-wrapper {
         .aligned-page-content;
         height: @menu-height;
 
-        > span {
+        > span.konoha-menu-item {
             color: #c9c9c9;
             display: inline-block;
             height: @menu-height;
@@ -96,7 +96,12 @@ body {
 
     > * {
         margin: 10px 0;
-	}
+
+        p {
+            margin: 5px;
+            text-align: left;
+        }
+    }
 }
 
 .konoha-footer {
