@@ -66,8 +66,28 @@ function konohascript_init()
 				.html("Copyright © 2012 Konoha Project"));
 };
 
+var slideNum = 0;
+
+function slideNext() {
+	var images = $("div.slide-images > img");
+	var cur = images.eq(slideNum-1).css('z-index', 998);
+	if (slideNum == images.length) {
+		slideNum = 0;
+	}
+	images.eq(slideNum).show();
+	cur.fadeOut(1000, function() {
+		$(this).css( 'z-index' , 1 );
+	});
+	slideNum++;
+	setTimeout("slideNext()", 1000);
+};
+
 function yoan_modules_init() {
-	$(".cn-slideshow").slideshow();
+	$(".yoan-slideshow")
+		.each(function() {
+			$("div.slide-images > img").hide()
+			slideNext();
+		});
 };
 
 function getActualDimension(image) {
