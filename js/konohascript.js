@@ -66,27 +66,28 @@ function konohascript_init()
 				.html("Copyright © 2012 Konoha Project"));
 };
 
-var slideNum = 0;
-
-function slideNext() {
+function slideNext(i) {
 	var images = $("div.slide-images > img");
-	var cur = images.eq(slideNum-1).css('z-index', 998);
-	if (slideNum == images.length) {
-		slideNum = 0;
+	var cur = images.eq(i-1).css('z-index', 998);
+	if (i == images.length) {
+		i = 0;
 	}
-	images.eq(slideNum).show();
+	images.eq(i).show();
 	cur.fadeOut(1000, function() {
 		$(this).css( 'z-index' , 1 );
 	});
-	slideNum++;
-	setTimeout("slideNext()", 1000);
+	i++;
+	//setTimeout("slideNext()", 1000);
+	setTimeout(function () {
+		slideNext(i);
+	}, 1000);
 };
 
 function yoan_modules_init() {
 	$(".yoan-slideshow")
 		.each(function() {
 			$("div.slide-images > img").hide()
-			slideNext();
+			slideNext(0);
 		});
 };
 
