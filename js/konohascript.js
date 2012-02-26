@@ -66,25 +66,65 @@ function konohascript_init()
 				.html("Copyright © 2012 Konoha Project"));
 };
 
+function showImage(img, pos, str) {
+	$('.slide-images').css('backgroundColor', 'black');
+	if ($('.slide-images #article').length > 0) {
+		$('.slide-images #article').remove();
+	}
+	if (pos == "left") {
+		img.css({'width': 650, 'height': 256}).show();
+		$('<div>').attr('id', 'article')
+			.css({
+				'position': 'absolute',
+				'width': 246,
+				'height': 256,
+				'left': 650,
+				'top': 0
+			}).appendTo('.slide-images');
+	}
+	else if (pos == "right") {
+		img.css({'width': 650, 'height': 256, 'left': 246, 'top': 0}).show();
+		$('<div>').attr('id', 'article')
+			.css({
+				'position': 'absolute',
+				'width': 246,
+				'height': 256,
+				'left': 0,
+				'top': 0
+			}).appendTo('.slide-images');
+	}
+	//else { // center
+	//}
+	$('<p>' + str + '</p>')
+		.css({
+			'text-align': 'left',
+			'font-family': 'monaco',
+			'font-size': 20,
+			'padding': 30,
+			'color': '#ffffff'
+		}).appendTo('.slide-images #article');
+};
+
 function slideNext(i) {
 	var images = $("div.slide-images > img");
 	var cur = images.eq(i-1).css('z-index', 998);
 	if (i == images.length) {
 		i = 0;
 	}
-	images.eq(i).show();
+	(i % 2 == 0) ? showImage(images.eq(i), "left", "hoge") : showImage(images.eq(i), "right", "hoge");
 	cur.fadeOut(1000, function() {
 		$(this).css( 'z-index' , 1 );
 	});
 	i++;
 	setTimeout(function () {
 		slideNext(i);
-	}, 1000);
+	}, 5000);
 };
 
 function yoan_modules_init() {
 	$(".yoan-slideshow")
 		.each(function() {
+			$("div.slide-images").css('position', 'relative');
 			$("div.slide-images > img").hide()
 			slideNext(0);
 		});
