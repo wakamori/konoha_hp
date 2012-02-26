@@ -10,12 +10,14 @@
 	<!--<link rel="stylesheet/less" type="text/css" href="css/konohascript.less"/>
 	<script type="text/javascript" src="js/less-1.2.1.min.js"></script>-->
 	<link rel="stylesheet" type="text/css" href="css/konohascript.css"/>
-	<link rel="stylesheet" type="text/css" href="css/highlight.css"/>
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/highlight.css"/>
+	<link rel="stylesheet" type="text/css" href="css/event.css"/>
   </head>
   <body id="body">
 	<div class="konoha-header"></div>
 	<div class="konoha-menu">
+	  <span>Home</span>
 	  <span>News</span>
 	  <span>Document</span>
 	  <span>Library</span>
@@ -57,7 +59,41 @@ options: iconv bmgc thcode sqlite3 syslog thread
 ((eval):1) Hello, world!
 		</div>
 	  </div>
-	  <div class="goccy-timeline"></div>
+	  <div class="konoha-event-timeline">
+		<h1 class="konoha-event-timeline-title">Events</h1>
+		<div class="konoha-event-timeline-main">
+		  <div class="konoha-event-timeline-sub">
+			<h2 class="konoha-event-timeline-subtitle">HPC Cluster Arrived!</h2>
+			<img class="konoha-event-timeline-img" src="images/events/cluster.jpg"></img>
+			<span class="konoha-event-timeline-text">
+			  <p>The HPC Cluster machine we ordered last year arrived at our laboratory  today, and setup completed.</p>
+			  <p>The view is spectacular!</p>
+			  <p>Inside a rack.</p>
+			</span>
+		  </div>
+		  <div class="konoha-event-timeline-sub">
+			<h2 class="konoha-event-timeline-subtitle">PRO84 at Hakodate</h2>
+			<img class="konoha-event-timeline-img" src="images/events/pro.jpg"></img>
+			<span class="konoha-event-timeline-text">
+			  <p>Takuma and Kimio joined PRO84 at Hakodate, Hokkaido on June 14-15.
+				We gave the following presentations:</p>
+			  <p>Kimio Kuramitsu : “拡張可能な外部識別子の設計と実装”
+				Takuma Wakamori, Masahiro Ide, Shinpei Nakata and Kimio Kuramitsu :
+				“プログラム解析情報を利用可能なバイトコード操作器の設計と実装”</p>
+			</span>
+		  </div>
+		  <div class="konoha-event-timeline-sub">
+			<h2 class="konoha-event-timeline-subtitle">IPSJ SIGOS @ Sapporo, Hokkaido</h2>
+			<img class="konoha-event-timeline-img" src="images/events/ipsj.jpg"></img>
+			<span class="konoha-event-timeline-text">
+			  <p>Sinpei and Masahiro joined a IPSJ SIGOS research session, held in Sapporo, Hokkaido.
+				We gave the following two presentations:</p>
+			  <p>井出真広，中田晋平, 倉光君郎. スクリプティング言語によるカーネル拡張. 第113回システムソフトウェアとオペレーティング・システム研究会, 2010
+				中田晋平, 倉光君郎. プロセスグループ別LSMの為のLSMフレームワーク拡張. 第113回システムソフトウェアとオペレーティング・システム研究会, 2010</p>
+			</span>
+		  </div>
+		</div>
+	  </div>
 	</div>
 	<div class="konoha-footer"></div>
 
@@ -71,7 +107,7 @@ options: iconv bmgc thcode sqlite3 syslog thread
 	<script type="text/javascript" src="js/jquery-ui-1.8.13.custom.min.js" charset="utf-8"></script>
 	<script type="text/javascript" src="js/jquery.slideshow.js"></script>
 	<script type="text/javascript" src="js/jquery.highlight-3.js"></script>
-	<script type="text/javascript" src="http://api.html5media.info/1.1.5/html5media.min.js"></script>
+	<!--<script type="text/javascript" src="http://api.html5media.info/1.1.5/html5media.min.js"></script>-->
 	<script type="text/javascript" src="js/highlight.pack.js"></script>
 	<script type="text/javascript" src="js/konohascript.js"></script>
 	<!------- my js code ------->
