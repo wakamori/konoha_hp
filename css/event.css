@@ -44,6 +44,7 @@
 .konoha-event-timeline-subtitle {
 	background:#ffffff;
 	text-align:left;
+	margin-bottom:10px;
     /*border-radius: 5px;*/
     -moz-border-radius: 5px;
     -webkit-border-top-left-radius: 5px;
