@@ -1,0 +1,67 @@
+.konoha-event-timeline {
+	width:100%;
+	overflow:hidden;
+}
+
+.konoha-event-timeline-title {
+	text-align: left;
+	border-bottom: 3px solid black;
+}
+
+.konoha-event-timeline-main {
+	width:100%;
+	overflow-y:scroll;
+	height:512px;
+}
+
+.konoha-event-timeline-main::-webkit-scrollbar {
+	-webkit-appearance: none;
+	width: 7px;
+}
+.konoha-event-timeline-main::-webkit-scrollbar-thumb {
+	border-radius: 4px;
+	background-color: rgba(0,0,0,.5);
+	-webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+
+.konoha-event-timeline-sub {
+	position:relative;
+	width:97%;
+	left:1%;
+	padding-left:10px;
+	background:white;/*background:#c9c9c9;*/
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+	display:block;
+	box-shadow: 0 1px 8px #666;
+	-webkit-box-shadow: 0 1px 8px #666;
+	-moz-box-shadow: 0 1px 8px #666;
+}
+
+.konoha-event-timeline-subtitle {
+	background:#ffffff;
+	text-align:left;
+    /*border-radius: 5px;*/
+    -moz-border-radius: 5px;
+    -webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+}
+
+.konoha-event-timeline-img {
+	position:relative;
+	text-align:left;
+	vertical-align:top;
+	display:inline-block;
+	left:5px;
+	width:150px;
+}
+
+.konoha-event-timeline-text {
+	position:relative;
+	vertical-align:top;
+	text-align:left;
+	display:inline-block;
+	width:686px;/*scrollbar-width:18px*/
+	left:10px;
+}
