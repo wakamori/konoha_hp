@@ -5,6 +5,7 @@
 
 .konoha-event-timeline-title {
 	text-align: left;
+	margin-top:10px;
 	border-bottom: 3px solid black;
 }
 
@@ -26,8 +27,9 @@
 
 .konoha-event-timeline-sub {
 	position:relative;
-	width:97%;
+	margin-top:20px;
 	left:1%;
+	width:97%;
 	padding-left:10px;
 	background:white;/*background:#c9c9c9;*/
     border-radius: 5px;
