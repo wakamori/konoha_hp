@@ -26,27 +26,45 @@
 	  <span id="download">Download</span>
 	</div>
 	<div class="konoha-contents">
-
-	  <h>Downloads</h>
-	  <p>
+	  <div style="text-align: left">
+		<h1>Downloads</h1>
+		<p>
 KonohaScript is an open source software, and this page shows the way of downloading. KonohaScript is available for many platforms and you can download with preferable way that suit for your platform. We prepare binary packages including installers, source tarball, and svn repository.
-      </p>
-	  <h>SVN Repository</h>
-	  <p>
+		</p>
+		<h2>Source/Binary Packages</h2>
+		<p>
+<strong>NOTE: KonohaScipt 1.0 beta binary packages are available in many platforms.</strong>
+Binary packages below are all self-contained and some of them including an installer (Windows, MacOSX).
+		</p>
+		<div class="uh-csvtable">
+Release,                                        Platform,                     Download, Size
+"KonohaScript 1.0 beta, SPLASH Demo version","Source tarball (UNIX)",http://code.google.com/p/konoha/downloads/detail?name=konoha-1.0.0-splash.tar.gz,1.5MB
+"KonohaScript 1.0 beta, rev655 (beta release)","Source tarball (UNIX)",http://konoha.googlecode.com/files/konoha-1.0.0-655.tar.gz,695KB
+,"MacOSX (Universal, v10.4+)",http://konoha.googlecode.com/files/konoha-1.0.0-655_macosx.dmg,388KB
+,"Windows (64-bit, mingw)",http://konoha.googlecode.com/files/konoha-1.0-655_mingw64.zip,2.7MB
+,"Fedora 14 (64-bit)",http://konoha.googlecode.com/files/konoha-1.0.0-655_x86_64.rpm,1.0MB
+,"Ubuntu lucid (64-bit)",http://konoha.googlecode.com/files/konoha-1.0.0-655_amd64.deb,299KB
+		</div>
+		<p>
+If you want to download the latest development version of KonohaScript, please refer the next section.
+		</p>
+		<h2>SVN Repository</h2>
+		<p>
 The latest version of KonohaScript is available from subversion. You can checkout the repository, configure, and build. The instructions below shows how to use svn repository.
-      </p>
-	  <div class="uh-script">
+		</p>
+		<div class="uh-script">
 $ svn checkout http://konoha.googlecode.com/svn/trunk/ $(konohascript)
 $ cd $(konohascript)/konoha
 $ cd build
 $ cmake ..
 $ make
 $ sudo make install
-	  </div>
-	  <h>Development Base</h>
-	  <p>
+		</div>
+		<h2>Development Base</h2>
+		<p>
 The development base of KonohaScript is hosted by googlecode.com. The latest information is also available at <a href="http://code.google.com/p/konoha">development base</a> including the information for developers.
-	  </p>
+		</p>
+	  </div>
 	</div>
 	<div class="konoha-footer"></div>
 	<!-------- scripts --------->
@@ -59,6 +77,7 @@ The development base of KonohaScript is hosted by googlecode.com. The latest inf
 	<script type="text/javascript" src="../js/jquery-ui-1.8.13.custom.min.js" charset="utf-8"></script>
 	<script type="text/javascript" src="../js/jquery.slideshow.js"></script>
 	<script type="text/javascript" src="../js/jquery.highlight-3.js"></script>
+	<script type="text/javascript" src="../js/jquery.csv.js"></script>
 	<!--<script type="text/javascript" src="http://api.html5media.info/1.1.5/html5media.min.js"></script>-->
 	<script type="text/javascript" src="../js/highlight.pack.js"></script>
 	<!------- my js code ------->
