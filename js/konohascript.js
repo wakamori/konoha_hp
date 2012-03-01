@@ -66,72 +66,16 @@ function konohascript_init()
 				.html("Copyright © 2012 Konoha Project"));
 };
 
-var slideData = [
-	{img: null, pos: "left", str: "Design Principle"},
-	{img: null, pos: "left", str: "Static/Dynamic"},
-	{img: null, pos: "left", str: "Qt"},
-	{img: null, pos: "left", str: "Aspen Project"}
-];
 
-function showImage(data) {
-	$('.slide-images').css('backgroundColor', 'black');
-	if ($('.slide-images #article').length > 0) {
-		$('.slide-images #article').remove();
-	}
-	if (data.pos == "left") {
-		data.img.show();
-		$('<div>').attr('id', 'article')
-			.css({
-				'position': 'absolute',
-				'width': 246,
-				'height': 256,
-				'left': 650,
-				'top': 0,
-				'z-index': 998
-			}).appendTo('.slide-images');
-	}
-	else if (data.pos == "right") {
-		data.img.show();
-		$('<div>').attr('id', 'article')
-			.css({
-				'position': 'absolute',
-				'width': 246,
-				'height': 256,
-				'left': 0,
-				'top': 0,
-				'z-index': 998
-			}).appendTo('.slide-images');
-	}
-	console.log("str: " + data.str);
-	$('<p>' + data.str + '</p>')
-		.css({
-			'text-align': 'center',
-			'font-family': 'monaco',
-			'font-size': 20,
-			'padding': 30,
-			'color': '#ffffff',
-			'z-index': 999
-		}).appendTo('.slide-images #article');
-};
-
-function slideNext(i) {
-	var images = $("div.slide-images > img");
-	var cur = images.eq(i-1).css('z-index', 998);
-	if (i == images.length) {
-		i = 0;
-	}
-	//console.log("img: " + slideData[i].img + ", pos: " + slideData[i].pos + ", str: " + slideData[i].str);
-	showImage(slideData[i]);
-	cur.fadeOut(1000, function() {
-		$(this).css('z-index', 1);
-	});
-	setTimeout(function () {
-		slideNext(++i);
-	//}, 1000);
-	}, 5000);
-};
-
-function yoan_modules_init() {
+function yoan_modules_init() 
+{
+	var slideData = [
+		{img: null, x: 650, y: 0, str: "Design Principle"},
+		{img: null, x: 0,   y: 0, str: "Static/Dynamic"},
+		{img: null, x: 650, y: 0, str: "Qt"},
+		{img: null, x: 650, y: 0, str: "Aspen Project"}
+	];
+	
 	$(".yoan-slideshow")
 		.each(function() {
 			$("div.slide-images").css('position', 'relative');
@@ -141,6 +85,32 @@ function yoan_modules_init() {
 			}
 			slideNext(0);
 		});
+
+	function showImage(data) {
+		if (data.str == "" && $('.slide-images #article').length > 0) {
+			$('.slide-images #article').hide();
+		}
+		data.img.css('z-index', 100).removeClass().show(); // second top of z
+		$('#article')
+			.css({
+				'left': data.x,
+				'top': data.y
+			});
+		$('#article p').html('<p>' + data.str + '</p>');
+		$('.slide-images #article').removeClass().show();
+	};
+	
+	function slideNext(i) {
+		var images = $("div.slide-images > img");
+		var cur = images.eq(i-1).css('z-index', 1000).show(); // top of z;
+		i = (i >= images.length) ? 0 : i;
+		showImage(slideData[i]);
+		cur.addClass('animated fadeOut');
+		$('#article').addClass('animated bounceInLeft');
+		setTimeout(function () {
+			slideNext(++i);
+		}, 5000);
+	};
 };
 
 function getActualDimension(image) {
