@@ -8,10 +8,15 @@
     padding-left: @left;
 }
 
-.aligned-page-content {
+.align-page-content {
     width: @content-width;
     margin-right: auto;
     margin-left: auto;
+}
+
+.limit-page-width {
+    width: 100%;
+    min-width: @content-width;
 }
 
 .uh-script-interactive {
@@ -38,17 +43,13 @@ body {
     height: 100%;
     background: #eff5f2;
     display: none /* turn this if loading finished */;
-
-    > * {
-        width: 100%;
-        min-width: @content-width;
-    }
 }
 
 .konoha-header {
     text-align: left;
     background: #f5fbf5;
     padding: 10px 0;
+    .limit-page-width;
 
     > img.konoha-header-logo {
         height : @logo-height;
@@ -68,12 +69,12 @@ body {
 
 .konoha-menu {
     position: relative;
-    width: 100%;
     height: @menu-height;
     background: black;
+    .limit-page-width;
 
     > div.konoha-menu-wrapper {
-        .aligned-page-content;
+        .align-page-content;
         height: @menu-height;
 
         > span.konoha-menu-item {
@@ -91,7 +92,7 @@ body {
 }
 
 .konoha-contents {
-    .aligned-page-content;
+    .align-page-content;
     opacity: 0 /* turn this if loading finished */;
 
     > * {
@@ -109,9 +110,10 @@ body {
     padding: 30px 0;
     color: lightgray;
     background: black;
+    .limit-page-width;
 
     > * {
-        .aligned-page-content;
+        .align-page-content;
         &.konoha-footer-copyright {
             font-size: small;
         }

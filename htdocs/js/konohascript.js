@@ -1,12 +1,13 @@
 ; /* <- DON'T ERASE THIS */
 
 var URL = "http://localhost/konoha";
+var IMG_URL = URL + "/images";
 function konohascript_init()
 {
 	$(".konoha-header")
 		.append(
 			$("<img>")
-				.attr("src", "images/logo.png")
+				.attr("src", IMG_URL + "/logo.png")
 				.attr("class", "konoha-header-logo"))
 		.append(
 			$("<div>")
@@ -41,7 +42,7 @@ function konohascript_init()
 	$("#demo").click(function() { location.href = URL + "/demo/"; });
 	$("#download").click(function() { location.href = URL + "/download/"; });
 
-	$(".konoha-contents p")
+	$(".konoha-contents div.hllang p")
 		.each(function() {
 			var p = $(this);
 			var keywords = ["Konoha", "JavaScript", "Java", "Ruby", "Python", "Perl", "C++"];
