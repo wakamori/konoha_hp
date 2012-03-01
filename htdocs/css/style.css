@@ -29,7 +29,6 @@
 	font-family: monaco;
 	font-size: 20px;
 	padding: 30px;
-	color: #330000;
 	z-index: 1200;
 }
 
@@ -40,14 +39,9 @@
 	left: 650px;
 	top: 0px;
 	z-index: 1200;
-	-webkit-animation-duration: 3s;
-	-webkit-animation-timing-function: ease-out;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-timing-function: ease;
 	-webkit-animation-iteration-count: 1;
-	/*
-	-vendor-animation-duration: 3s;
-	-vendor-animation-delay: 2s;
-	-vendor-animation-iteration-count: infinite;
-	*/
 }
 
 

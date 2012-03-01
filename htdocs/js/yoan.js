@@ -1,10 +1,14 @@
 function yoan_modules_init() 
 {
 	var slideData = [
-		{img: null, x: 650, y: 0, str: "Design Principle"},
-		{img: null, x: 0,   y: 0, str: "Static/Dynamic"},
-		{img: null, x: 650, y: 0, str: "Qt"},
-		{img: null, x: 650, y: 0, str: "Aspen Project"}
+		{img: null, from: 'left', x: 650, y: 0, color: '#ffffff',
+			bg: '#000000', barcol: '#330066', title: "Design Principle"},
+		{img: null, from: 'right', x: 0,   y: 0, color: '#ffffff',
+			bg: '#000000', barcol: '#330066', title: "Static/Dynamic"},
+		{img: null, from: 'up', x: 650, y: 0, color: '#ffffff',
+			bg: '#000000', barcol: '#330066', title: "Qt"},
+		{img: null, from: 'down', x: 650, y: 0, color: '#ffffff',
+			bg: '#000000', barcol: '#330066', title: "Aspen Project"}
 	];
 	
 	$(".yoan-slideshow")
@@ -18,28 +22,48 @@ function yoan_modules_init()
 		});
 
 	function showImage(data) {
-		if (data.str == "" && $('.slide-images #article').length > 0) {
+		if (data.title == "" && $('.slide-images #article').length > 0) {
 			$('.slide-images #article').hide();
 		}
-		data.img.css('z-index', 100).removeClass().show(); // second top of z
+		data.img.css('z-index', 100).removeClass().show();
+		data.img.css('z-index', 100).removeClass().show();
 		$('#article')
 			.css({
+				'background': data.bg,
 				'left': data.x,
 				'top': data.y
 			});
-		$('#article p').html('<p>' + data.str + '</p>');
+		$('.str')
+			.css({
+				'color': data.color
+			});
+		$('#article p').html('<p>' + data.title + '</p>');
 		$('.slide-images #article').removeClass().show();
 	};
 	
 	function slideNext(i) {
 		var images = $("div.slide-images > img");
-		var cur = images.eq(i-1).css('z-index', 1000).show(); // top of z;
+		var cur = images.eq(i-1).css('z-index', 1000).show();
 		i = (i >= images.length) ? 0 : i;
-		showImage(slideData[i]);
+		var data = slideData[i];
+		showImage(data);
 		cur.addClass('animated fadeOut');
-		$('#article').addClass('animated bounceInLeft');
+		if (data.from == 'left') {
+			$('#article').addClass('animated fadeInRightBig');
+			$('#article title').addClass('animated fadeInRightBig');
+		}
+		else if (data.from == 'right') {
+			$('#article').addClass('animated fadeInLeftBig');
+			$('#var').addClass('animated bounceInLeft');
+		}
+		else if (data.from == 'up') {
+			$('#article').addClass('animated fadeInDownBig');
+		}
+		else { // data.from == 'down'
+			$('#article').addClass('animated fadeInUpBig');
+		}
 		setTimeout(function () {
 			slideNext(++i);
-		}, 5000);
+		}, 7000);
 	};
 };
