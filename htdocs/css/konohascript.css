@@ -24,7 +24,7 @@ body {
   color: black;
   height: 100%;
   background: #eff5f2;
-  display: none /* turn this if loading finished */;
+/*  display: none*/ /* turn this if loading finished */;
 }
 body > * {
   width: 100%;
