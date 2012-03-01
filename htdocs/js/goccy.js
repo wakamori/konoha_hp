@@ -25,7 +25,6 @@ function getActualDimension(image) {
 }
 
 function goccy_modules_init() {
-	/* dummy element */
 	$(".konoha-event-timeline-sub")
 		.each(function() {
 			var text = $(this).children(".konoha-event-timeline-text")

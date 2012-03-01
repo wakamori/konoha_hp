@@ -1,5 +1,6 @@
 ; /* <- DON'T ERASE THIS */
 
+var URL = "http://localhost/konoha";
 function konohascript_init()
 {
 	$(".konoha-header")
@@ -31,6 +32,14 @@ function konohascript_init()
 		.wrapAll(
 			$("<div>")
 				.attr("class", "konoha-menu-wrapper"));
+
+	$("#home").click(function() { location.href = URL; });
+	$("#projects").click(function() { location.href = URL + "/projects/"; });
+	$("#doc").click(function() { location.href = URL + "/document/"; });
+	$("#playground").click(function() { location.href = URL + "/playground/"; });
+	$("#library").click(function() { location.href = URL + "/library/"; });
+	$("#demo").click(function() { location.href = URL + "/demo/"; });
+	$("#download").click(function() { location.href = URL + "/download/"; });
 
 	$(".konoha-contents p")
 		.each(function() {
