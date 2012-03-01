@@ -11,6 +11,7 @@ $(document).ready(function() {
 	uh_modules_init();
 	yoan_modules_init();
 	goccy_modules_init();
+	shida_modules_init();
 
 	/* ----- all modules loaded ----- */
 	setTimeout(function() {

@@ -13,6 +13,14 @@
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
   border-radius: 8px;
 }
+.interactive-demo-output {
+  text-align: left;
+  font-family: monaco;
+  font-size: 13px;
+  border: 2px double #ffffff;
+  border-radius: 8px;
+  background-color: #ffcc44;
+}
 * {
 	margin: 0;
 	padding: 0;
