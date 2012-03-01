@@ -1,7 +1,8 @@
 
 ; /* <- DON'T ERASE THIS */
 
-$(document).ready(function() {
+//$(document).ready(function() {
+window.onload = function() {
 	/* ----- display contents elements ----- */
 	$(document.body)
 		.css("display", "block");
@@ -18,4 +19,4 @@ $(document).ready(function() {
 		$(".konoha-contents")
 			.animate({ opacity: 1.0 }, 300);
 	}, 400);
-});
+};
