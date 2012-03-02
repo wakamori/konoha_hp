@@ -28,26 +28,19 @@
 	text-align: center;
 	font-family: monaco;
 	font-size: 20px;
-	padding: 30px;
-	color: #330000;
+	padding: 10px;
 	z-index: 1200;
 }
 
 .slide-images > #article {
 	position: absolute;
-	width: 246px;
+	width: 200px;
 	height: 256px;
 	left: 650px;
 	top: 0px;
 	z-index: 1200;
-	-webkit-animation-duration: 3s;
-	-webkit-animation-timing-function: ease-out;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-timing-function: ease;
 	-webkit-animation-iteration-count: 1;
-	/*
-	-vendor-animation-duration: 3s;
-	-vendor-animation-delay: 2s;
-	-vendor-animation-iteration-count: infinite;
-	*/
 }
-
 
