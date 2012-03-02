@@ -6,9 +6,9 @@ function yoan_modules_init()
 		{img: null, from: 'right', x: 0,   y: 0, color: '#ffffff',
 			bg: '#000000', barcol: '#330066', title: "Static/Dynamic"},
 		{img: null, from: 'up', x: 650, y: 0, color: '#000000',
-			bg: '#ffffff', barcol: '#330066', title: "Various Library and Platforms"},
-		{img: null, from: 'down', x: 650, y: 0, color: '#ffffff',
-			bg: '#000000', barcol: '#330066', title: "Aspen Project"}
+			bg: '#ffffff', barcol: '#330066', title: "Various Library and Platforms"}
+		//{img: null, from: 'down', x: 650, y: 0, color: '#ffffff',
+		//	bg: '#000000', barcol: '#330066', title: "Aspen Project"}
 	];
 	
 	$(".yoan-slideshow")
