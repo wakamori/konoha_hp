@@ -73,7 +73,8 @@ function goccy_modules_init() {
 
 		var codearea = document.createElement("span");
 		codearea.className = "konoha-demo-contents-codearea";
-		
+		codearea.style.width = 896 * 0.2 + "px";
+
 		popup_window.appendChild(video);
 		popup_window.appendChild(codearea);
 
@@ -110,7 +111,28 @@ function goccy_modules_init() {
 			}, 500, function() {
 				$(".konoha-demo-contents-codearea").append("<u>preview this sample's code</u>");
 				$(".konoha-demo-contents-codearea u").click(function(event) {
-					
+					var script = $.ajax({
+						url: "../scripts/particle.k", //TODO: get script name
+						async: false
+					}).responseText;
+					$(this).parent().css({
+						top:"-512px",
+					});
+					$(this).parent()
+						.wrapInner(
+							$("<pre>")
+								.wrapInner(
+									$("<code>")
+										.attr("class", "python uh-script-interactive")));
+					$(this).parent().text(script);
+					$(".konoha-demo-contents-codearea").animate({
+						left:"0px",
+						opacity:0.7,
+						height: "480px",
+						width:"896px",
+					}, 500, function() {
+						//$(this).text(script);
+					});
 				});
 			});
 		});
