@@ -1,7 +1,11 @@
-.aligned-page-content {
+.align-page-content {
   width: 896px;
   margin-right: auto;
   margin-left: auto;
+}
+.limit-page-width {
+  width: 100%;
+  min-width: 896px;
 }
 .uh-script-interactive {
   text-align: left;
@@ -14,8 +18,8 @@
   border-radius: 8px;
 }
 * {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 body {
   font-family: arial, Helvetica, sans-serif;
@@ -24,16 +28,14 @@ body {
   color: black;
   height: 100%;
   background: #eff5f2;
-/*  display: none*/ /* turn this if loading finished */;
-}
-body > * {
-  width: 100%;
-  min-width: 896px;
+  display: none /* turn this if loading finished */;
 }
 .konoha-header {
   text-align: left;
   background: #f5fbf5;
   padding: 10px 0;
+  width: 100%;
+  min-width: 896px;
 }
 .konoha-header > img.konoha-header-logo {
   height: 48px;
@@ -51,9 +53,10 @@ body > * {
 }
 .konoha-menu {
   position: relative;
-  width: 100%;
   height: 20px;
   background: black;
+  width: 100%;
+  min-width: 896px;
 }
 .konoha-menu > div.konoha-menu-wrapper {
   width: 896px;
@@ -89,6 +92,8 @@ body > * {
   padding: 30px 0;
   color: lightgray;
   background: black;
+  width: 100%;
+  min-width: 896px;
 }
 .konoha-footer > * {
   width: 896px;

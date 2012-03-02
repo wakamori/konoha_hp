@@ -1,3 +1,7 @@
+/* Presented by Goccy[goccy54@gmail.com] */
+
+/* ================= Event Timeline ================= */
+
 .konoha-event-timeline {
 	width:100%;
 	overflow:hidden;
@@ -13,12 +17,14 @@
 	width:100%;
 	overflow-y:scroll;
 	height:512px;
+	scrollbar-base-color: #ff8c00;
 }
 
 .konoha-event-timeline-main::-webkit-scrollbar {
 	-webkit-appearance: none;
 	width: 7px;
 }
+
 .konoha-event-timeline-main::-webkit-scrollbar-thumb {
 	border-radius: 4px;
 	background-color: rgba(0,0,0,.5);
@@ -46,9 +52,11 @@
 	text-align:left;
 	margin-bottom:10px;
     /*border-radius: 5px;*/
-    -moz-border-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
     -webkit-border-top-left-radius: 5px;
 	-webkit-border-top-right-radius: 5px;
+
 }
 
 .konoha-event-timeline-img {
@@ -67,4 +75,70 @@
 	display:inline-block;
 	width:686px;/*scrollbar-width:18px*/
 	left:10px;
+}
+
+/* ================= Demo ================= */
+.konoha-contents-title {
+	text-align: left;
+	border-bottom: 3px solid black;	
+}
+
+.konoha-demo-contents {
+	text-align:left;
+}
+
+.konoha-demo-contents img {
+	position:relative;
+	margin-top: 10px;
+	margin-right: 16px;
+	width:160px;/* 5 [items/line] */
+	height:120px;
+	background-color:#c9c9c9;
+	vertical-align:top;
+	display:inline-block;
+}
+
+.konoha-demo-contents-video {
+	position:relative;
+	width:80%;
+	height:100%;
+	vertical-align:top;
+	display:inline-block;
+}
+
+.konoha-demo-contents-codearea {
+	position:relative;
+	top:50%;
+	width:20%;
+	height:100%;
+	color:#1e90ff;
+	vertical-align:top;
+	display:inline-block;
+}
+
+.konoha-demo-contents-codearea u:hover {
+	cursor: pointer;	
+}
+
+.konoha-demo-contents-subtitle {
+	text-align:left;
+	height:30px;
+	margin-top:20px;
+	margin-bottom:10px;
+}
+
+.konoha-lightbox-window {
+	position:absolute;
+	width:1px;
+	z-index:100;
+	background-color:white;
+}
+
+.konoha-lightbox-filter {
+	position:absolute;
+	top:0px;
+	left:0px;
+	z-index:99;
+	opacity:0;
+	background-color:black;
 }
