@@ -1,0 +1,20 @@
+.uh-csvtable table {
+  margin: 20px;
+  border-spacing: 0px;
+  border-collapse: collapse;
+  margin-right: auto;
+  margin-left: auto;
+}
+.uh-csvtable td, .uh-csvtable th {
+  padding: 8px;
+  vertical-align: top;
+  border-style: solid;
+  border-color: #606060;
+  border-width: 1px;
+}
+.uh-csvtable th {
+  background: #e6e6e6;
+}
+.uh-csvtable td {
+  background: white;
+}

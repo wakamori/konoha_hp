@@ -1,116 +1,233 @@
-﻿
 /* ----- for jquery.highlight.js ----- */
-
 .highlight {
   font-weight: bold;
 }
-
 .highlight.konoha {
   font-size: x-large;
 }
 
-/* ----- for highlight.js ----- */
-
-/*
-
-Dark style from softwaremaniacs.org (c) Ivan Sagalaev <Maniac@SoftwareManiacs.Org>
-
-*/
-
-pre code {
-  display: block; padding: 0.5em;
+/* ----- for uh-script & highlight.js ----- */
+.uh-script-dark pre code {
+  display: block;
+  color: #DDD;
+  padding: 0.5em;
   background: #444;
+  text-align: left;
+  font-family: monaco;
+  font-size: 13px;
+  padding: 10px;
+  margin: 5px;
+  border: 2px double #ffffff;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
 }
-
-pre .keyword,
-pre .literal,
-pre .change,
-pre .winutils,
-pre .flow,
-pre .lisp .title,
-pre .tex .special {
+.uh-script-dark pre .keyword,
+.uh-script-dark pre .literal,
+.uh-script-dark pre .change,
+.uh-script-dark pre .winutils,
+.uh-script-dark pre .flow {
   color: white;
 }
-
-pre code,
-pre .ruby .subst {
-  color: #DDD;
-}
-
-pre .string,
-pre .function .title,
-pre .class .title,
-pre .haskell .label,
-pre .ini .title,
-pre .tag .value,
-pre .css .rules .value,
-pre .preprocessor,
-pre .ruby .symbol,
-pre .ruby .symbol .string,
-pre .ruby .symbol .keyword,
-pre .ruby .symbol .keymethods,
-pre .ruby .instancevar,
-pre .ruby .class .parent,
-pre .built_in,
-pre .sql .aggregate,
-pre .django .template_tag,
-pre .django .variable,
-pre .smalltalk .class,
-pre .javadoc,
-pre .ruby .string,
-pre .django .filter .argument,
-pre .smalltalk .localvars,
-pre .smalltalk .array,
-pre .attr_selector,
-pre .pseudo,
-pre .addition,
-pre .stream,
-pre .envvar,
-pre .apache .tag,
-pre .apache .cbracket,
-pre .tex .command,
-pre .input_number {
+.uh-script-dark pre .string,
+.uh-script-dark pre .function .title,
+.uh-script-dark pre .class .title,
+.uh-script-dark pre .ini .title,
+.uh-script-dark pre .tag .value,
+.uh-script-dark pre .css .rules .value,
+.uh-script-dark pre .preprocessor,
+.uh-script-dark pre .built_in,
+.uh-script-dark pre .attr_selector,
+.uh-script-dark pre .pseudo,
+.uh-script-dark pre .addition,
+.uh-script-dark pre .stream,
+.uh-script-dark pre .envvar,
+.uh-script-dark pre .input_number {
   color: #D88;
 }
-
-pre .comment,
-pre .java .annotation,
-pre .python .decorator,
-pre .template_comment,
-pre .pi,
-pre .doctype,
-pre .deletion,
-pre .shebang,
-pre .apache .sqbracket,
-pre .tex .formula {
+.uh-script-dark pre .comment,
+.uh-script-dark pre .python .decorator,
+.uh-script-dark pre .template_comment,
+.uh-script-dark pre .pi,
+.uh-script-dark pre .doctype,
+.uh-script-dark pre .deletion,
+.uh-script-dark pre .shebang {
   color: #777;
 }
-
-pre .keyword,
-pre .literal,
-pre .css .id,
-pre .phpdoc,
-pre .function .title,
-pre .class .title,
-pre .haskell .label,
-pre .vbscript .built_in,
-pre .sql .aggregate,
-pre .rsl .built_in,
-pre .smalltalk .class,
-pre .xml .tag .title,
-pre .diff .header,
-pre .chunk,
-pre .winutils,
-pre .bash .variable,
-pre .lisp .title,
-pre .apache .tag,
-pre .tex .special {
+.uh-script-dark pre .keyword,
+.uh-script-dark pre .literal,
+.uh-script-dark pre .css .id,
+.uh-script-dark pre .function .title,
+.uh-script-dark pre .class .title,
+.uh-script-dark pre .chunk,
+.uh-script-dark pre .winutils,
+.uh-script-dark pre .bash .variable {
   font-weight: bold;
 }
-
-pre .xml .css,
-pre .xml .javascript,
-pre .xml .vbscript,
-pre .tex .formula {
-  opacity: 0.5;
+.uh-script-light pre code {
+  display: block;
+  color: #333;
+  padding: 0.5em;
+  background: #F0F0F0;
+  text-align: left;
+  font-family: monaco;
+  font-size: 13px;
+  padding: 10px;
+  margin: 5px;
+  border: 2px double #ffffff;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+}
+.uh-script-light pre .keyword,
+.uh-script-light pre .literal,
+.uh-script-light pre .change,
+.uh-script-light pre .winutils,
+.uh-script-light pre .flow {
+  color: black;
+}
+.uh-script-light pre .string,
+.uh-script-light pre .function .title,
+.uh-script-light pre .class .title,
+.uh-script-light pre .ini .title,
+.uh-script-light pre .tag .value,
+.uh-script-light pre .css .rules .value,
+.uh-script-light pre .preprocessor,
+.uh-script-light pre .built_in,
+.uh-script-light pre .attr_selector,
+.uh-script-light pre .pseudo,
+.uh-script-light pre .addition,
+.uh-script-light pre .stream,
+.uh-script-light pre .envvar,
+.uh-script-light pre .input_number {
+  color: #800;
+}
+.uh-script-light pre .comment,
+.uh-script-light pre .python .decorator,
+.uh-script-light pre .template_comment,
+.uh-script-light pre .pi,
+.uh-script-light pre .doctype,
+.uh-script-light pre .deletion,
+.uh-script-light pre .shebang {
+  color: #888;
+}
+.uh-script-light pre .keyword,
+.uh-script-light pre .literal,
+.uh-script-light pre .css .id,
+.uh-script-light pre .function .title,
+.uh-script-light pre .class .title,
+.uh-script-light pre .chunk,
+.uh-script-light pre .winutils,
+.uh-script-light pre .bash .variable {
+  font-weight: bold;
+}
+.uh-script.dark pre code {
+  display: block;
+  color: #DDD;
+  padding: 0.5em;
+  background: #444;
+  text-align: left;
+  font-family: monaco;
+  font-size: 13px;
+  padding: 10px;
+  margin: 5px;
+  border: 2px double #ffffff;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+}
+.uh-script.dark pre .keyword,
+.uh-script.dark pre .literal,
+.uh-script.dark pre .change,
+.uh-script.dark pre .winutils,
+.uh-script.dark pre .flow {
+  color: white;
+}
+.uh-script.dark pre .string,
+.uh-script.dark pre .function .title,
+.uh-script.dark pre .class .title,
+.uh-script.dark pre .ini .title,
+.uh-script.dark pre .tag .value,
+.uh-script.dark pre .css .rules .value,
+.uh-script.dark pre .preprocessor,
+.uh-script.dark pre .built_in,
+.uh-script.dark pre .attr_selector,
+.uh-script.dark pre .pseudo,
+.uh-script.dark pre .addition,
+.uh-script.dark pre .stream,
+.uh-script.dark pre .envvar,
+.uh-script.dark pre .input_number {
+  color: #D88;
+}
+.uh-script.dark pre .comment,
+.uh-script.dark pre .python .decorator,
+.uh-script.dark pre .template_comment,
+.uh-script.dark pre .pi,
+.uh-script.dark pre .doctype,
+.uh-script.dark pre .deletion,
+.uh-script.dark pre .shebang {
+  color: #777;
+}
+.uh-script.dark pre .keyword,
+.uh-script.dark pre .literal,
+.uh-script.dark pre .css .id,
+.uh-script.dark pre .function .title,
+.uh-script.dark pre .class .title,
+.uh-script.dark pre .chunk,
+.uh-script.dark pre .winutils,
+.uh-script.dark pre .bash .variable {
+  font-weight: bold;
+}
+.uh-script.light pre code {
+  display: block;
+  color: #333;
+  padding: 0.5em;
+  background: #F0F0F0;
+  text-align: left;
+  font-family: monaco;
+  font-size: 13px;
+  padding: 10px;
+  margin: 5px;
+  border: 2px double #ffffff;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+}
+.uh-script.light pre .keyword,
+.uh-script.light pre .literal,
+.uh-script.light pre .change,
+.uh-script.light pre .winutils,
+.uh-script.light pre .flow {
+  color: black;
+}
+.uh-script.light pre .string,
+.uh-script.light pre .function .title,
+.uh-script.light pre .class .title,
+.uh-script.light pre .ini .title,
+.uh-script.light pre .tag .value,
+.uh-script.light pre .css .rules .value,
+.uh-script.light pre .preprocessor,
+.uh-script.light pre .built_in,
+.uh-script.light pre .attr_selector,
+.uh-script.light pre .pseudo,
+.uh-script.light pre .addition,
+.uh-script.light pre .stream,
+.uh-script.light pre .envvar,
+.uh-script.light pre .input_number {
+  color: #800;
+}
+.uh-script.light pre .comment,
+.uh-script.light pre .python .decorator,
+.uh-script.light pre .template_comment,
+.uh-script.light pre .pi,
+.uh-script.light pre .doctype,
+.uh-script.light pre .deletion,
+.uh-script.light pre .shebang {
+  color: #888;
+}
+.uh-script.light pre .keyword,
+.uh-script.light pre .literal,
+.uh-script.light pre .css .id,
+.uh-script.light pre .function .title,
+.uh-script.light pre .class .title,
+.uh-script.light pre .chunk,
+.uh-script.light pre .winutils,
+.uh-script.light pre .bash .variable {
+  font-weight: bold;
 }

@@ -1,7 +1,11 @@
-.aligned-page-content {
+.align-page-content {
   width: 896px;
   margin-right: auto;
   margin-left: auto;
+}
+.limit-page-width {
+  width: 100%;
+  min-width: 896px;
 }
 .uh-script-interactive {
   text-align: left;
@@ -13,9 +17,13 @@
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
   border-radius: 8px;
 }
+.note {
+  font-weight: bold;
+  display: block;
+}
 * {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 body {
   font-family: arial, Helvetica, sans-serif;
@@ -24,18 +32,17 @@ body {
   color: black;
   height: 100%;
   background: #eff5f2;
-/*  display: none*/ /* turn this if loading finished */;
-}
-body > * {
-  width: 100%;
-  min-width: 896px;
+  display: none /* turn this if loading finished */;
 }
 .konoha-header {
   text-align: left;
   background: #f5fbf5;
   padding: 10px 0;
+  width: 100%;
+  min-width: 896px;
 }
 .konoha-header > img.konoha-header-logo {
+  width: 89px;
   height: 48px;
   margin: 12px;
 }
@@ -51,9 +58,10 @@ body > * {
 }
 .konoha-menu {
   position: relative;
-  width: 100%;
   height: 20px;
   background: black;
+  width: 100%;
+  min-width: 896px;
 }
 .konoha-menu > div.konoha-menu-wrapper {
   width: 896px;
@@ -85,16 +93,19 @@ body > * {
   text-align: left;
 }
 .konoha-footer {
+  padding-top: 27px;
   height: 100%;
-  padding: 30px 0;
   color: lightgray;
   background: black;
+  width: 100%;
+  min-width: 896px;
 }
-.konoha-footer > * {
-  width: 896px;
-  margin-right: auto;
-  margin-left: auto;
+.konoha-footer > a > img.konoha-footer-logo {
+  position: relative;
+  top: -24px;
+  left: -140px;
+  height: 30px;
 }
-.konoha-footer > *.konoha-footer-copyright {
+.konoha-footer > .konoha-footer-copyright {
   font-size: small;
 }

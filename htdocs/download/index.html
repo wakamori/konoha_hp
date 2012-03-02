@@ -1,90 +1,112 @@
 <!DOCTYPE html>
 <html>
   <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-	<meta http-equiv="X-UA-Compatible" content="chrome=1"/>
-	<meta name="keywords" content="KonohaScript,Konoha,scripting,language,fast,static,typing"/>
-	<meta name="description" content=""/>
-	<title>KonohaScript</title>
-	<link rel="shortcut icon" href="../favicon.ico"/>
-	<!--<link rel="stylesheet/less" type="text/css" href="css/konohascript.less"/>
-	<script type="text/javascript" src="js/less-1.2.1.min.js"></script>-->
-	<link rel="stylesheet" type="text/css" href="../css/konohascript.css"/>
-	<link rel="stylesheet" type="text/css" href="../css/style.css"/>
-	<link rel="stylesheet" type="text/css" href="../css/highlight.css"/>
-	<link rel="stylesheet" type="text/css" href="../css/event.css"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1"/>
+    <meta name="keywords" content="KonohaScript,Konoha,scripting,language,fast,static,typing"/>
+    <meta name="description" content=""/>
+    <title>KonohaScript</title>
+    <link rel="shortcut icon" href="../favicon.ico"/>
+    <!--<link rel="stylesheet/less" type="text/css" href="css/konohascript.less"/>
+    <script type="text/javascript" src="js/less-1.2.1.min.js"></script>-->
+    <link rel="stylesheet" type="text/css" href="../css/konohascript.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/event.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/uh.css"/>
+    <link rel="stylesheet" type="text/css" href="./download.css"/>
   </head>
   <body id="body">
-	<div class="konoha-header"></div>
-	<div class="konoha-menu">
-	  <span id="home">Home</span>
-	  <span id="projects">Projects</span>
-	  <span id="doc">Document</span>
-	  <span id="playground">Playground</span>
-	  <span id="library">Library</span>
-	  <span id="demo">Demo</span>
-	  <span id="download">Download</span>
-	</div>
-	<div class="konoha-contents">
-	  <div style="text-align: left">
-		<h1>Downloads</h1>
-		<p>
+    <div class="konoha-header"></div>
+    <div class="konoha-menu">
+      <span id="home">Home</span>
+      <span id="projects">Projects</span>
+      <span id="doc">Document</span>
+      <span id="playground">Playground</span>
+      <span id="library">Library</span>
+      <span id="demo">Demo</span>
+      <span id="download">Download</span>
+    </div>
+    <div class="konoha-contents">
+      <div>
+        <h1>Downloads</h1>
+        <p>
 KonohaScript is an open source software, and this page shows the way of downloading. KonohaScript is available for many platforms and you can download with preferable way that suit for your platform. We prepare binary packages including installers, source tarball, and svn repository.
-		</p>
-		<h2>Source/Binary Packages</h2>
-		<p>
-<strong>NOTE: KonohaScipt 1.0 beta binary packages are available in many platforms.</strong>
+        </p>
+      </div>
+      <div>
+        <h2>Editor Application</h2>
+        <p>
+<span class="note">NOTE: This application is currently derivered only for MacOSX 10.6 later.</span>
+Editor application including konoha's package with dependent libraries.
+        </p>
+        <div class="uh-csvtable">
+Release,Platform,Download,Size
+"KonohaScript 1.0 beta, (initial release)","MacOSX (Cocoa, v10.6+)",http://,720MB
+
+        </div>
+      </div>
+      <div>
+        <h2>Source/Binary Packages</h2>
+        <p>
+KonohaScipt 1.0 beta binary packages are available in many platforms.
 Binary packages below are all self-contained and some of them including an installer (Windows, MacOSX).
-		</p>
-		<div class="uh-csvtable">
-Release,                                        Platform,                     Download, Size
+        </p>
+        <div class="uh-csvtable">
+Release,Platform,Download,Size
 "KonohaScript 1.0 beta, SPLASH Demo version","Source tarball (UNIX)",http://code.google.com/p/konoha/downloads/detail?name=konoha-1.0.0-splash.tar.gz,1.5MB
 "KonohaScript 1.0 beta, rev655 (beta release)","Source tarball (UNIX)",http://konoha.googlecode.com/files/konoha-1.0.0-655.tar.gz,695KB
 ,"MacOSX (Universal, v10.4+)",http://konoha.googlecode.com/files/konoha-1.0.0-655_macosx.dmg,388KB
 ,"Windows (64-bit, mingw)",http://konoha.googlecode.com/files/konoha-1.0-655_mingw64.zip,2.7MB
 ,"Fedora 14 (64-bit)",http://konoha.googlecode.com/files/konoha-1.0.0-655_x86_64.rpm,1.0MB
 ,"Ubuntu lucid (64-bit)",http://konoha.googlecode.com/files/konoha-1.0.0-655_amd64.deb,299KB
-		</div>
-		<p>
+        </div>
+        <p>
 If you want to download the latest development version of KonohaScript, please refer the next section.
-		</p>
-		<h2>SVN Repository</h2>
-		<p>
+        </p>
+      </div>
+      <div>
+        <h2>SVN Repository</h2>
+        <p>
+<span class="note">NOTE: To build Konoha, you shuold install <a href="http://www.cmake.org/">CMake</a> (v2.8+)</span>
 The latest version of KonohaScript is available from subversion. You can checkout the repository, configure, and build. The instructions below shows how to use svn repository.
-		</p>
-		<div class="uh-script">
+        </p>
+        <div class="uh-script light">
 $ svn checkout http://konoha.googlecode.com/svn/trunk/ $(konohascript)
 $ cd $(konohascript)/konoha
 $ cd build
 $ cmake ..
 $ make
 $ sudo make install
-		</div>
-		<h2>Development Base</h2>
-		<p>
+        </div>
+      </div>
+      <div>
+        <h2>Development Base</h2>
+        <p>
 The development base of KonohaScript is hosted by googlecode.com. The latest information is also available at <a href="http://code.google.com/p/konoha">development base</a> including the information for developers.
-		</p>
-	  </div>
-	</div>
-	<div class="konoha-footer"></div>
-	<!-------- scripts --------->
-	<!--[if lt IE 9]>
-		<script src=js/html5.js"></script>
-		<script src="js/IE9.js"></script>
-	<![endif]-->
-	<!---- jquery & plugins ---->
-	<script type="text/javascript" src="../js/jquery.js"></script>
-	<script type="text/javascript" src="../js/jquery-ui-1.8.13.custom.min.js" charset="utf-8"></script>
-	<script type="text/javascript" src="../js/jquery.slideshow.js"></script>
-	<script type="text/javascript" src="../js/jquery.highlight-3.js"></script>
-	<script type="text/javascript" src="../js/jquery.csv.js"></script>
-	<!--<script type="text/javascript" src="http://api.html5media.info/1.1.5/html5media.min.js"></script>-->
-	<script type="text/javascript" src="../js/highlight.pack.js"></script>
-	<!------- my js code ------->
-	<script type="text/javascript" src="../js/konohascript.js"></script>
-	<script type="text/javascript" src="../js/yoan.js"></script>
-	<script type="text/javascript" src="../js/uh.js"></script>
-	<script type="text/javascript" src="../js/goccy.js"></script>
-	<script type="text/javascript" src="../js/main.js"></script>
+        </p>
+      </div>
+    </div>
+    <div class="konoha-footer"></div>
+    <!-------- scripts --------->
+    <!--[if lt IE 9]>
+        <script src=js/html5.js"></script>
+        <script src="js/IE9.js"></script>
+    <![endif]-->
+    <!---- jquery & plugins ---->
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/jquery-ui-1.8.13.custom.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../js/jquery.slideshow.js"></script>
+    <script type="text/javascript" src="../js/jquery.highlight-3.js"></script>
+    <script type="text/javascript" src="../js/jquery.csv.js"></script>
+    <!--<script type="text/javascript" src="http://api.html5media.info/1.1.5/html5media.min.js"></script>-->
+    <script type="text/javascript" src="../js/highlight.pack.js"></script>
+    <script type="text/javascript" src="../js/scrollsmoothly.js"></script>
+    <!------- my js code ------->
+    <script type="text/javascript" src="../js/konohascript.js"></script>
+    <script type="text/javascript" src="../js/yoan.js"></script>
+    <script type="text/javascript" src="../js/uh.js"></script>
+    <script type="text/javascript" src="../js/goccy.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
   </body>
 </html>
