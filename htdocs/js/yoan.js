@@ -1,12 +1,12 @@
 function yoan_modules_init() 
 {
 	var slideData = [
-		{img: null, from: 'left', x: 650, y: 0, color: '#ffffff',
+		{img: null, from: 'left', x: 700, y: 0, color: '#ffffff',
 			bg: '#000000', barcol: '#330066', title: "Design Principle"},
 		{img: null, from: 'right', x: 0,   y: 0, color: '#ffffff',
 			bg: '#000000', barcol: '#330066', title: "Static/Dynamic"},
-		{img: null, from: 'up', x: 650, y: 0, color: '#ffffff',
-			bg: '#000000', barcol: '#330066', title: "Qt"},
+		{img: null, from: 'up', x: 650, y: 0, color: '#000000',
+			bg: '#ffffff', barcol: '#330066', title: "Various Library and Platforms"},
 		{img: null, from: 'down', x: 650, y: 0, color: '#ffffff',
 			bg: '#000000', barcol: '#330066', title: "Aspen Project"}
 	];
