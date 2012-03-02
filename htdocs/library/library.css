@@ -1,0 +1,22 @@
+.libList {
+	padding: 10px;
+	text-align: left;
+	left: 0px;
+	top: 0px;
+}
+
+.inline {
+	padding: 5px;
+	color: #000000;
+	background: #cccccc;
+}
+
+.outline {
+	padding: 5px;
+	color: #000000;
+	background: #cccccc;
+}
+
+.lib {
+	padding-left: 30px;
+}

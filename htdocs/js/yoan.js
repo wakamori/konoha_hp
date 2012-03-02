@@ -64,6 +64,6 @@ function yoan_modules_init()
 		}
 		setTimeout(function () {
 			slideNext(++i);
-		}, 7000);
+		}, 10000);
 	};
 };
