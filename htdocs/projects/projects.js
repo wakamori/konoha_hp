@@ -5,6 +5,18 @@ $(function konoha_projects_init(){
 	$("#hpc").attr('href', URL + "/projects/hpc");
 	$("#aspen").attr('href', URL + "/projects/apsen");
 
+	$('.project > h3')
+		.each(function() {
+			console.log(this);
+			var rand_color = "#";
+			for (var i = 0; i < 3; i++) {
+				var rand = Math.floor(Math.random() * 155);
+				rand += 100;
+				rand_color += rand.toString(16);
+			}
+			$(this).css({ borderBottom: "3px solid" + rand_color});
+		});
+
 	$('.sentence')
 		.each(function() {
 			var children = $(this).children();

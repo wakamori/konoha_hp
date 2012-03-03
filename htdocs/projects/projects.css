@@ -7,6 +7,11 @@
 	background: #391839*/;
 }
 
+.project > a.title {
+	margin-bottom: 5px;
+	/*width: 896px;*/
+}
+
 .project > p{
 	padding-left: 16px;
 }
@@ -17,11 +22,11 @@
   padding: 10px 0;
 }
 */
-.project > img.project_img {
-  height: 48px;
-  margin: 12px;
+.project_img {
+  /*width: 48px;*/
+  margin-top: 12px;
 }
 
 .project > div.sentence {
-	left: 100;
+	left: 400px;
 }
