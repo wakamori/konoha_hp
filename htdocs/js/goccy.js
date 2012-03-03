@@ -123,7 +123,7 @@ function goccy_modules_init() {
 							$("<pre>")
 								.wrapInner(
 									$("<code>")
-										.attr("class", "python uh-script-interactive")));
+										.attr("class", "python uh-script-dark")));
 					$(this).parent().text(script);
 					$(".konoha-demo-contents-codearea").animate({
 						left:"0px",
