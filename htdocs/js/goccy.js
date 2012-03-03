@@ -72,7 +72,7 @@ function goccy_modules_init() {
 		video.controls = true;
 
 		var codearea = document.createElement("span");
-		codearea.className = "konoha-demo-contents-codearea";
+		codearea.className = "konoha-demo-contents-codearea uh-script-dark";
 		codearea.style.width = 896 * 0.2 + "px";
 
 		popup_window.appendChild(video);
