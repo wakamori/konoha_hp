@@ -10,3 +10,18 @@
 .project > p{
 	padding-left: 16px;
 }
+/*
+. {
+  text-align: left;
+  background: #f5fbf5;
+  padding: 10px 0;
+}
+*/
+.project > img.project_img {
+  height: 48px;
+  margin: 12px;
+}
+
+.project > div.sentence {
+	left: 100;
+}
