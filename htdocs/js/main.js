@@ -13,6 +13,10 @@ window.onload = function() {
 	yoan_modules_init();
 	goccy_modules_init();
 
+	/* ------ load external modules ----- */
+	hljs.initHighlighting();
+	scrollsmoothly.init();
+
 	/* ----- all modules loaded ----- */
 	setTimeout(function() {
 		$(".konoha-contents")

@@ -2,6 +2,9 @@
 
 var URL = "http://localhost/konoha";
 var IMG_URL = URL + "/images";
+var KLAB_URL = "http://www.ubicg.ynu.ac.jp/";
+var DEOS_URL = "http://www.dependable-os.net/";
+
 function konohascript_init()
 {
 	$(".konoha-header")
@@ -52,25 +55,15 @@ function konohascript_init()
 		});
 
 	$(".konoha-footer")
-/*		.append($("<div>").css("padding-bottom","50px")
-				.append($("<div>").css({float:"left",width:"30%"})
-						.append($("<img>").attr("src","images/logo.png").css("width","50px"))
-						.append($("<span>").text("Konoha").css({fontSize:"28px",fontWeight:"bold",marginLeft:"10px"})))
-				.append($("<div>").css({float:"left",width:"70%"})
-						.append($("<div>").attr("class","uh-columnbox")
-								.each(function(){
-									var container = $(this);
-									$(".konoha-menu-item").each(function() {
-										var text = $(this).text();
-										container.append($("<div>")
-														 .append($("<ul>").css({textAlign:"left",listStyleType:"none"})
-																 .each(function(){
-																	 $(this)
-																		 .append($("<li>").css({fontWeight:"bold",marginBottom:"3px"}).text(text))
-																		 .append($("<li>").css("margin","1px 12px").text("dummy"));})));});})))
-				.append($("<div>").css("clear","both")))*/
 		.append(
 			$("<div>")
 				.attr("class", "konoha-footer-copyright")
-				.html("Copyright © 2012 Konoha Project"));
+				.html("Copyright (c) 2012 Konoha Project"))
+		.append(
+			$("<a>")
+				.attr("href", "#body")
+				.append(
+					$("<img>")
+						.attr("src", IMG_URL + "/logo_white.png")
+						.attr("class", "konoha-footer-logo")));
 };
