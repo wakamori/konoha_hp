@@ -31,14 +31,16 @@ function goccy_modules_init() {
 			var title_h = $(this).children(".konoha-event-timeline-subtitle").height();
 			var h = text.height();
 			var image = $(this).children("img");
-			var size = getActualDimension(image.get(0));
-			var width = size.width;
-			var compress_ratio = 1 / (width / 150);
-			var cw = size.width * compress_ratio;
-			var ch = size.height * compress_ratio;
-			image.attr("width", cw);
-			image.attr("height", ch);
-			image.css({width:cw+"px", height:ch+"px"});
+			if (image.length > 0) {
+				var size = getActualDimension(image.get(0));
+				var width = size.width;
+				var compress_ratio = 1 / (width / 150);
+				var cw = size.width * compress_ratio;
+				var ch = size.height * compress_ratio;
+				image.attr("width", cw);
+				image.attr("height", ch);
+				image.css({width:cw+"px", height:ch+"px"});
+			}
 			var subtitle = $(this).children(".konoha-event-timeline-subtitle");
 			var rand_color = "#";
 			for (var i = 0; i < 3; i++) {
