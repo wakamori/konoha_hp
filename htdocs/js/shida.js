@@ -7,14 +7,14 @@ function shida_modules_init() {
 	$(".interactive-demo-textarea").css("height", 100);
 	$(".interactive-demo-button").click(function(e) {
 			var textarea_data = $(".interactive-demo-textarea").val();
-			console.log(textarea_data);
 			$.ajax({
 				url: "/cgi-bin/konoha2js.k",
 				type: "POST",
 				cache: false,
 				data: textarea_data + "\n",
 				success: function(msg) {
-					konoha.OUT = "";
+					var konoha = null;
+					var script = null;
 					eval(msg);
 					konoha_main();
 					$(".interactive-demo-output").html(konoha.OUT);
