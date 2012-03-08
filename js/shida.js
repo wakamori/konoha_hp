@@ -1,3 +1,14 @@
+function replaceAll(s, src, dest) {
+	return s.split(src).join(dest);
+}
+function response_escape(s) {
+	s = replaceAll(s, '<', '&lt;');
+	s = replaceAll(s, '>', '&gt;');
+	s = replaceAll(s, "\"", '&quot;');
+	s = replaceAll(s, '&', '&amp;');
+	s = replaceAll(s, "\n", '<br>');
+	return s;
+}
 function shida_modules_init() {
 	var width = $(".konoha-contents").width();
 	$(".shida-demo > *")
@@ -17,7 +28,8 @@ function shida_modules_init() {
 					var script = null;
 					eval(msg);
 					konoha_main();
-					$(".interactive-demo-output").html(konoha.OUT);
+					var res = response_escape(konoha.OUT)
+					$(".interactive-demo-output").html(res);
 					$(".interactive-demo-output").css("display", "none").fadeIn();
 				}
 			});
