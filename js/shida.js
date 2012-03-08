@@ -8,7 +8,7 @@ function shida_modules_init() {
 	$(".interactive-demo-button").click(function(e) {
 			var textarea_data = $(".interactive-demo-textarea").val();
 			$.ajax({
-				url: "/cgi-bin/konoha2js.k",
+				url: "http://konoha.ubicg.ynu.ac.jp/aspen/cgi-bin/konoha2js.k",
 				type: "POST",
 				cache: false,
 				data: textarea_data + "\n",
