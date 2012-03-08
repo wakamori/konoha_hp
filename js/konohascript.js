@@ -40,7 +40,7 @@ function konohascript_init()
 	$("#home").click(function() { location.href = URL; });
 	$("#projects").click(function() { location.href = URL + "/projects/"; });
 	$("#doc").click(function() { location.href = URL + "/document/"; });
-	$("#playground").click(function() { location.href = URL + "/playground/"; });
+	//$("#playground").click(function() { location.href = URL + "/playground/"; });
 	$("#library").click(function() { location.href = URL + "/library/"; });
 	$("#demo").click(function() { location.href = URL + "/demo/"; });
 	$("#download").click(function() { location.href = URL + "/download/"; });
