@@ -16,7 +16,7 @@
 .konoha-event-timeline-main {
 	width:100%;
 	overflow-y:scroll;
-	height:512px;
+	height:256px;
 	scrollbar-base-color: #ff8c00;
 }
 
