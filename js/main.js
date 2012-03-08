@@ -12,6 +12,7 @@ window.onload = function() {
 	uh_modules_init();
 	yoan_modules_init();
 	goccy_modules_init();
+	shida_modules_init();
 
 	/* ------ load external modules ----- */
 	hljs.initHighlighting();

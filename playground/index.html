@@ -13,7 +13,6 @@
 	<link rel="stylesheet" type="text/css" href="../css/style.css"/>
 	<link rel="stylesheet" type="text/css" href="../css/highlight.css"/>
 	<link rel="stylesheet" type="text/css" href="../css/event.css"/>
-	<link rel="stylesheet" type="text/css" href="../css/uh.css"/>
   </head>
   <body id="body">
 	<div class="konoha-header"></div>
@@ -27,6 +26,16 @@
 	  <span id="download">Download</span>
 	</div>
 	<div class="konoha-contents">
+		<div class="shida-demo">
+			<h1 class="interactive-demo-title">Interactive Demo</h1>
+			<textarea class="interactive-demo-textarea">print "hello world";</textarea>
+			<div>
+				<input class="interactive-demo-button" type="submit" value="execute">
+			</div>
+			<div class="interactive-demo-output">
+			hello world
+			</div>
+		</div>
 	</div>
 	<div class="konoha-footer"></div>
 	<!-------- scripts --------->
@@ -37,16 +46,24 @@
 	<!---- jquery & plugins ---->
 	<script type="text/javascript" src="../js/jquery.js"></script>
 	<script type="text/javascript" src="../js/jquery-ui-1.8.13.custom.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="../js/jquery.slideshow.js"></script>
 	<script type="text/javascript" src="../js/jquery.highlight-3.js"></script>
 	<!--<script type="text/javascript" src="http://api.html5media.info/1.1.5/html5media.min.js"></script>-->
 	<script type="text/javascript" src="../js/highlight.pack.js"></script>
 	<script type="text/javascript" src="../js/scrollsmoothly.js"></script>
-	<script type="text/javascript" src="../js/jquery.csv.js"></script>
 	<!------- my js code ------->
 	<script type="text/javascript" src="../js/konohascript.js"></script>
 	<script type="text/javascript" src="../js/yoan.js"></script>
 	<script type="text/javascript" src="../js/uh.js"></script>
 	<script type="text/javascript" src="../js/goccy.js"></script>
+	<script type="text/javascript" src="../js/shida.js"></script>
 	<script type="text/javascript" src="../js/main.js"></script>
-  </body>
-</html>
+	<!------- konoha2js include files ------->
+	<script type="text/javascript" language="javascript" src="../js/konoha.js" > </script>
+	<script type="text/javascript" language="javascript" src="../js/konoha.math.js" > </script>
+	<script type="text/javascript" language="javascript" src="../js/js.js" > </script>
+	<script type="text/javascript" language="javascript" src="../js/js.dom.js" > </script>
+	<script type="text/javascript" language="javascript" src="../js/js.jquery.js" > </script>
+
+	</body>
+	</html>
