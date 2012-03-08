@@ -21,6 +21,14 @@
   font-weight: bold;
   display: block;
 }
+.interactive-demo-output {
+  text-align: left;
+  font-family: monaco;
+  font-size: 13px;
+  border: 2px double #ffffff;
+  border-radius: 8px;
+  background-color: #ffcc44;
+}
 * {
   margin: 0;
   padding: 0;

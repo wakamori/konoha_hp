@@ -1,6 +1,6 @@
 ; /* <- DON'T ERASE THIS */
 
-var URL = "http://www.konohascript.org";
+var URL = "http://konohascript.org";
 var IMG_URL = URL + "/images";
 var KLAB_URL = "http://www.ubicg.ynu.ac.jp/";
 var DEOS_URL = "http://www.dependable-os.net/";
