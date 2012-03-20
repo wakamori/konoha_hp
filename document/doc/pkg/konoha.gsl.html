@@ -1,0 +1,220 @@
+<html><body>
+<h3>GslPolyComplexWorkspace</h3>
+<hr/>
+<table border=1 cellspacing=0 cellpadding=2>
+<caption>Constants</caption>
+<tr><th>Type</th><th>NameAndValue</th></tr>
+</table><table border=1 cellspacing=0 cellpadding=2>
+<caption>Methods</caption>
+<tr><th>Type</th><th>Description</th></tr>
+<tr><td class='mtd_type'>GslPolyComplexWorkspace</td><td class='mtd_desc'>new(Int size)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+</table><h3>GslPoly</h3>
+<hr/>
+<table border=1 cellspacing=0 cellpadding=2>
+<caption>Constants</caption>
+<tr><th>Type</th><th>NameAndValue</th></tr>
+</table><table border=1 cellspacing=0 cellpadding=2>
+<caption>Methods</caption>
+<tr><th>Type</th><th>Description</th></tr>
+<tr><td class='mtd_type'>Float</td><td class='mtd_desc'>eval(Float[] c, Float x)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>evalDerivs(Float[] c, Float x, Float[] res)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>ddInit(Float[] dd, Float[] xa, Float[] ya)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Float</td><td class='mtd_desc'>ddEval(Float[] dd, Float[] xa, Float x)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>ddTaylor(Float[] c, Float xp, Float[] dd, Float[] xa, Float[] w)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Map&lt;Float,Float&gt;</td><td class='mtd_desc'>solveQuadratic(Float a, Float b, Float c)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Map&lt;Float,Float,Float&gt;</td><td class='mtd_desc'>solveCubic(Float a, Float b, Float c)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Float[]</td><td class='mtd_desc'>complexSolve(Float[] a, GslPolyComplexWorkspace ws)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+</table><h3>GslStats</h3>
+<hr/>
+<table border=1 cellspacing=0 cellpadding=2>
+<caption>Constants</caption>
+<tr><th>Type</th><th>NameAndValue</th></tr>
+</table><table border=1 cellspacing=0 cellpadding=2>
+<caption>Methods</caption>
+<tr><th>Type</th><th>Description</th></tr>
+<tr><td class='mtd_type'>Float</td><td class='mtd_desc'>mean(Float[] data)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+</table><h3>GslPerm</h3>
+<hr/>
+<table border=1 cellspacing=0 cellpadding=2>
+<caption>Constants</caption>
+<tr><th>Type</th><th>NameAndValue</th></tr>
+</table><table border=1 cellspacing=0 cellpadding=2>
+<caption>Methods</caption>
+<tr><th>Type</th><th>Description</th></tr>
+<tr><td class='mtd_type'>GslPerm</td><td class='mtd_desc'>new(Int n)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>get(Int i)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>swap(Int i, Int j)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>size()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int[]</td><td class='mtd_desc'>data()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>valid()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>reverse()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>GslPerm</td><td class='mtd_desc'>inverse()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>next()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>prev()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>GslPerm</td><td class='mtd_desc'>mul(GslPerm pb)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>fprintf(OutputStream out, String formatter)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>GslPerm</td><td class='mtd_desc'>linearToCanonical()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>GslPerm</td><td class='mtd_desc'>canonicalToLinear()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>inversions()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>linearCycles()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>canonicalCycles()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+</table><h3>GslComb</h3>
+<hr/>
+<table border=1 cellspacing=0 cellpadding=2>
+<caption>Constants</caption>
+<tr><th>Type</th><th>NameAndValue</th></tr>
+</table><table border=1 cellspacing=0 cellpadding=2>
+<caption>Methods</caption>
+<tr><th>Type</th><th>Description</th></tr>
+<tr><td class='mtd_type'>GslComb</td><td class='mtd_desc'>new(Int n, Int k)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>initFirst()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>initLast()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>GslComb</td><td class='mtd_desc'>memcpy()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>get(Int i)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>getN()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>getK()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int[]</td><td class='mtd_desc'>getData()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>valid()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>GslComb</td><td class='mtd_desc'>next()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>GslComb</td><td class='mtd_desc'>prev()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+</table><h3>GslMulti</h3>
+<hr/>
+<table border=1 cellspacing=0 cellpadding=2>
+<caption>Constants</caption>
+<tr><th>Type</th><th>NameAndValue</th></tr>
+</table><table border=1 cellspacing=0 cellpadding=2>
+<caption>Methods</caption>
+<tr><th>Type</th><th>Description</th></tr>
+<tr><td class='mtd_type'>GslMulti</td><td class='mtd_desc'>new(Int n, Int k)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>initFirst()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>initLast()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>GslMulti</td><td class='mtd_desc'>copy()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>get(Int i)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>range()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>size()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int[]</td><td class='mtd_desc'>getData()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Boolean</td><td class='mtd_desc'>valid()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>GslMulti</td><td class='mtd_desc'>next()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>GslMulti</td><td class='mtd_desc'>prev()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+</table><h3>GslMath</h3>
+<hr/>
+<table border=1 cellspacing=0 cellpadding=2>
+<caption>Constants</caption>
+<tr><th>Type</th><th>NameAndValue</th></tr>
+<tr><td class='const_type'>Float</td><td>E = 2.718282</td></tr>
+<tr><td class='const_type'>Float</td><td>LOG10E = 0.434294</td></tr>
+<tr><td class='const_type'>Float</td><td>LOG2E = 1.442695</td></tr>
+<tr><td class='const_type'>Float</td><td>PI = 3.141593</td></tr>
+<tr><td class='const_type'>Float</td><td>PI_2 = 1.570796</td></tr>
+<tr><td class='const_type'>Float</td><td>SQRT1_2 = 0.707107</td></tr>
+<tr><td class='const_type'>Float</td><td>SQRT2 = 1.414214</td></tr>
+<tr><td class='const_type'>Float</td><td>SQRT3 = 1.732051</td></tr>
+<tr><td class='const_type'>Float</td><td>PI_4 = 0.785398</td></tr>
+<tr><td class='const_type'>Float</td><td>SQRTPI = 1.772454</td></tr>
+<tr><td class='const_type'>Float</td><td>LN10 = 2.302585</td></tr>
+<tr><td class='const_type'>Float</td><td>LN2 = 0.693147</td></tr>
+<tr><td class='const_type'>Float</td><td>LNPI = 1.144730</td></tr>
+<tr><td class='const_type'>Float</td><td>EULER = 0.577216</td></tr>
+</table><table border=1 cellspacing=0 cellpadding=2>
+<caption>Methods</caption>
+<tr><th>Type</th><th>Description</th></tr>
+<tr><td class='mtd_type'>Boolean</td><td class='mtd_desc'>isNan(Float x)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>isInf(Float x)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Boolean</td><td class='mtd_desc'>isFinite(Float x)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Float</td><td class='mtd_desc'>log1p(Float x)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Float</td><td class='mtd_desc'>expm1(Float x)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Float</td><td class='mtd_desc'>hypot(Float x, Float y)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Float</td><td class='mtd_desc'>hypot3(Float x, Float y, Float z)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Float</td><td class='mtd_desc'>acosh(Float x)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Float</td><td class='mtd_desc'>asinh(Float x)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Float</td><td class='mtd_desc'>atanh(Float x)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Float</td><td class='mtd_desc'>ldexp(Float x, Int e)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Map&lt;Float,Int&gt;</td><td class='mtd_desc'>frexp(Float x)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Float</td><td class='mtd_desc'>powInt(Float x, Int n)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Float</td><td class='mtd_desc'>pow2(Float x)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Float</td><td class='mtd_desc'>pow3(Float x)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Float</td><td class='mtd_desc'>pow4(Float x)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Float</td><td class='mtd_desc'>pow5(Float x)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Float</td><td class='mtd_desc'>pow6(Float x)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Float</td><td class='mtd_desc'>pow7(Float x)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Float</td><td class='mtd_desc'>pow8(Float x)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Float</td><td class='mtd_desc'>pow9(Float x)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Boolean</td><td class='mtd_desc'>sign(Float x)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Boolean</td><td class='mtd_desc'>isOdd(Int x)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Boolean</td><td class='mtd_desc'>isEven(Int x)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>fcmp(Float x, Float y, Float epsilon)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+</table></body></html>

@@ -1,0 +1,792 @@
+<html><body>
+<h3>Cairo</h3>
+<hr/>
+<table border=1 cellspacing=0 cellpadding=2>
+<caption>Constants</caption>
+<tr><th>Type</th><th>NameAndValue</th></tr>
+<tr><td class='const_type'>Int</td><td>ANTIALIAS_DEFAULT = 0</td></tr>
+<tr><td class='const_type'>Int</td><td>ANTIALIAS_GRAY = 2</td></tr>
+<tr><td class='const_type'>Int</td><td>ANTIALIAS_NONE = 1</td></tr>
+<tr><td class='const_type'>Int</td><td>ANTIALIAS_SUBPIXEL = 3</td></tr>
+<tr><td class='const_type'>Int</td><td>CONTENT_ALPHA = 8192</td></tr>
+<tr><td class='const_type'>Int</td><td>CONTENT_COLOR_ALPHA = 12288</td></tr>
+<tr><td class='const_type'>Int</td><td>CONTENT_COLOR = 4096</td></tr>
+<tr><td class='const_type'>Int</td><td>DEVICE_TYPE_DRM = 0</td></tr>
+<tr><td class='const_type'>Int</td><td>DEVICE_TYPE_GL = 1</td></tr>
+<tr><td class='const_type'>Int</td><td>DEVICE_TYPE_SCRIPT = 2</td></tr>
+<tr><td class='const_type'>Int</td><td>DEVICE_TYPE_XCB = 3</td></tr>
+<tr><td class='const_type'>Int</td><td>DEVICE_TYPE_XLIB = 4</td></tr>
+<tr><td class='const_type'>Int</td><td>DEVICE_TYPE_XML = 5</td></tr>
+<tr><td class='const_type'>Int</td><td>EXTEND_NONE = 0</td></tr>
+<tr><td class='const_type'>Int</td><td>EXTEND_PAD = 3</td></tr>
+<tr><td class='const_type'>Int</td><td>EXTEND_REFLECT = 2</td></tr>
+<tr><td class='const_type'>Int</td><td>EXTEND_REPEAT = 1</td></tr>
+<tr><td class='const_type'>Int</td><td>FILL_RULE_EVEN_ODD = 1</td></tr>
+<tr><td class='const_type'>Int</td><td>FILL_RULE_WINDING = 0</td></tr>
+<tr><td class='const_type'>Int</td><td>FILTER_BEST = 2</td></tr>
+<tr><td class='const_type'>Int</td><td>FILTER_BILINEAR = 4</td></tr>
+<tr><td class='const_type'>Int</td><td>FILTER_FAST = 0</td></tr>
+<tr><td class='const_type'>Int</td><td>FILTER_GAUSSIAN = 5</td></tr>
+<tr><td class='const_type'>Int</td><td>FILTER_GOOD = 1</td></tr>
+<tr><td class='const_type'>Int</td><td>FILTER_NEAREST = 3</td></tr>
+<tr><td class='const_type'>Int</td><td>FONT_SLANT_ITALIC = 1</td></tr>
+<tr><td class='const_type'>Int</td><td>FONT_SLANT_NORMAL = 0</td></tr>
+<tr><td class='const_type'>Int</td><td>FONT_SLANT_OBLIQUE = 2</td></tr>
+<tr><td class='const_type'>Int</td><td>FONT_TYPE_FT = 1</td></tr>
+<tr><td class='const_type'>Int</td><td>FONT_TYPE_QUARTZ = 3</td></tr>
+<tr><td class='const_type'>Int</td><td>FONT_TYPE_TOY = 0</td></tr>
+<tr><td class='const_type'>Int</td><td>FONT_TYPE_USER = 4</td></tr>
+<tr><td class='const_type'>Int</td><td>FONT_TYPE_WIN32 = 2</td></tr>
+<tr><td class='const_type'>Int</td><td>FONT_WEIGHT_BOLD = 1</td></tr>
+<tr><td class='const_type'>Int</td><td>FONT_WEIGHT_NORMAL = 0</td></tr>
+<tr><td class='const_type'>Int</td><td>FORMAT_A1 = 3</td></tr>
+<tr><td class='const_type'>Int</td><td>FORMAT_A8 = 2</td></tr>
+<tr><td class='const_type'>Int</td><td>FORMAT_ARGB32 = 0</td></tr>
+<tr><td class='const_type'>Int</td><td>FORMAT_INVALID = -1</td></tr>
+<tr><td class='const_type'>Int</td><td>FORMAT_RGB16_565 = 4</td></tr>
+<tr><td class='const_type'>Int</td><td>FORMAT_RGB24 = 1</td></tr>
+<tr><td class='const_type'>Int</td><td>HINT_METRICS_DEFAULT = 0</td></tr>
+<tr><td class='const_type'>Int</td><td>HINT_METRICS_OFF = 1</td></tr>
+<tr><td class='const_type'>Int</td><td>HINT_METRICS_ON = 2</td></tr>
+<tr><td class='const_type'>Int</td><td>HINT_STYLE_DEFAULT = 0</td></tr>
+<tr><td class='const_type'>Int</td><td>HINT_STYLE_FULL = 4</td></tr>
+<tr><td class='const_type'>Int</td><td>HINT_STYLE_MEDIUM = 3</td></tr>
+<tr><td class='const_type'>Int</td><td>HINT_STYLE_NONE = 1</td></tr>
+<tr><td class='const_type'>Int</td><td>HINT_STYLE_SLIGHT = 2</td></tr>
+<tr><td class='const_type'>Int</td><td>LINE_CAP_BUTT = 0</td></tr>
+<tr><td class='const_type'>Int</td><td>LINE_CAP_ROUND = 1</td></tr>
+<tr><td class='const_type'>Int</td><td>LINE_CAP_SQUARE = 2</td></tr>
+<tr><td class='const_type'>Int</td><td>LINE_JOIN_BEVEL = 2</td></tr>
+<tr><td class='const_type'>Int</td><td>LINE_JOIN_MITER = 0</td></tr>
+<tr><td class='const_type'>Int</td><td>LINE_JOIN_ROUND = 1</td></tr>
+<tr><td class='const_type'>Int</td><td>OPERATOR_ADD = 12</td></tr>
+<tr><td class='const_type'>Int</td><td>OPERATOR_ATOP = 5</td></tr>
+<tr><td class='const_type'>Int</td><td>OPERATOR_CLEAR = 0</td></tr>
+<tr><td class='const_type'>Int</td><td>OPERATOR_COLOR_BURN = 20</td></tr>
+<tr><td class='const_type'>Int</td><td>OPERATOR_COLOR_DODGE = 19</td></tr>
+<tr><td class='const_type'>Int</td><td>OPERATOR_DARKEN = 17</td></tr>
+<tr><td class='const_type'>Int</td><td>OPERATOR_DEST_ATOP = 10</td></tr>
+<tr><td class='const_type'>Int</td><td>OPERATOR_DEST_IN = 8</td></tr>
+<tr><td class='const_type'>Int</td><td>OPERATOR_DEST_OUT = 9</td></tr>
+<tr><td class='const_type'>Int</td><td>OPERATOR_DEST_OVER = 7</td></tr>
+<tr><td class='const_type'>Int</td><td>OPERATOR_DEST = 6</td></tr>
+<tr><td class='const_type'>Int</td><td>OPERATOR_DIFFERENCE = 23</td></tr>
+<tr><td class='const_type'>Int</td><td>OPERATOR_EXCLUSION = 24</td></tr>
+<tr><td class='const_type'>Int</td><td>OPERATOR_HARD_LIGHT = 21</td></tr>
+<tr><td class='const_type'>Int</td><td>OPERATOR_HSL_COLOR = 27</td></tr>
+<tr><td class='const_type'>Int</td><td>OPERATOR_HSL_HUE = 25</td></tr>
+<tr><td class='const_type'>Int</td><td>OPERATOR_HSL_LUMINOSITY = 28</td></tr>
+<tr><td class='const_type'>Int</td><td>OPERATOR_HSL_SATURATION = 26</td></tr>
+<tr><td class='const_type'>Int</td><td>OPERATOR_IN = 3</td></tr>
+<tr><td class='const_type'>Int</td><td>OPERATOR_LIGHTEN = 18</td></tr>
+<tr><td class='const_type'>Int</td><td>OPERATOR_MULTIPLY = 14</td></tr>
+<tr><td class='const_type'>Int</td><td>OPERATOR_OUT = 4</td></tr>
+<tr><td class='const_type'>Int</td><td>OPERATOR_OVERLAY = 16</td></tr>
+<tr><td class='const_type'>Int</td><td>OPERATOR_OVER = 2</td></tr>
+<tr><td class='const_type'>Int</td><td>OPERATOR_SATURATE = 13</td></tr>
+<tr><td class='const_type'>Int</td><td>OPERATOR_SCREEN = 15</td></tr>
+<tr><td class='const_type'>Int</td><td>OPERATOR_SOFT_LIGHT = 22</td></tr>
+<tr><td class='const_type'>Int</td><td>OPERATOR_SOURCE = 1</td></tr>
+<tr><td class='const_type'>Int</td><td>OPERATOR_XOR = 11</td></tr>
+<tr><td class='const_type'>Int</td><td>PATH_CLOSE_PATH = 3</td></tr>
+<tr><td class='const_type'>Int</td><td>PATH_CURVE_TO = 2</td></tr>
+<tr><td class='const_type'>Int</td><td>PATH_LINE_TO = 1</td></tr>
+<tr><td class='const_type'>Int</td><td>PATH_MOVE_TO = 0</td></tr>
+<tr><td class='const_type'>Int</td><td>PATTERN_TYPE_LINEAR = 2</td></tr>
+<tr><td class='const_type'>Int</td><td>PATTERN_TYPE_RADIAL = 3</td></tr>
+<tr><td class='const_type'>Int</td><td>PATTERN_TYPE_SOLID = 0</td></tr>
+<tr><td class='const_type'>Int</td><td>PATTERN_TYPE_SURFACE = 1</td></tr>
+<tr><td class='const_type'>Int</td><td>REGION_OVERLAP_IN = 0</td></tr>
+<tr><td class='const_type'>Int</td><td>STATUS_CLIP_NOT_REPRESENTABLE = 22</td></tr>
+<tr><td class='const_type'>Int</td><td>STATUS_DEVICE_ERROR = 35</td></tr>
+<tr><td class='const_type'>Int</td><td>STATUS_DEVICE_TYPE_MISMATCH = 34</td></tr>
+<tr><td class='const_type'>Int</td><td>STATUS_FILE_NOT_FOUND = 18</td></tr>
+<tr><td class='const_type'>Int</td><td>STATUS_FONT_TYPE_MISMATCH = 25</td></tr>
+<tr><td class='const_type'>Int</td><td>STATUS_INVALID_CLUSTERS = 29</td></tr>
+<tr><td class='const_type'>Int</td><td>STATUS_INVALID_CONTENT = 15</td></tr>
+<tr><td class='const_type'>Int</td><td>STATUS_INVALID_DASH = 19</td></tr>
+<tr><td class='const_type'>Int</td><td>STATUS_INVALID_DSC_COMMENT = 20</td></tr>
+<tr><td class='const_type'>Int</td><td>STATUS_INVALID_FORMAT = 16</td></tr>
+<tr><td class='const_type'>Int</td><td>STATUS_INVALID_INDEX = 21</td></tr>
+<tr><td class='const_type'>Int</td><td>STATUS_INVALID_MATRIX = 5</td></tr>
+<tr><td class='const_type'>Int</td><td>STATUS_INVALID_PATH_DATA = 9</td></tr>
+<tr><td class='const_type'>Int</td><td>STATUS_INVALID_POP_GROUP = 3</td></tr>
+<tr><td class='const_type'>Int</td><td>STATUS_INVALID_RESTORE = 2</td></tr>
+<tr><td class='const_type'>Int</td><td>STATUS_INVALID_SIZE = 32</td></tr>
+<tr><td class='const_type'>Int</td><td>STATUS_INVALID_SLANT = 30</td></tr>
+<tr><td class='const_type'>Int</td><td>STATUS_INVALID_STATUS = 6</td></tr>
+<tr><td class='const_type'>Int</td><td>STATUS_INVALID_STRIDE = 24</td></tr>
+<tr><td class='const_type'>Int</td><td>STATUS_INVALID_STRING = 8</td></tr>
+<tr><td class='const_type'>Int</td><td>STATUS_INVALID_VISUAL = 17</td></tr>
+<tr><td class='const_type'>Int</td><td>STATUS_INVALID_WEIGHT = 31</td></tr>
+<tr><td class='const_type'>Int</td><td>STATUS_LAST_STATUS = 36</td></tr>
+<tr><td class='const_type'>Int</td><td>STATUS_NEGATIVE_COUNT = 28</td></tr>
+<tr><td class='const_type'>Int</td><td>STATUS_NO_CURRENT_POINT = 4</td></tr>
+<tr><td class='const_type'>Int</td><td>STATUS_NO_MEMORY = 1</td></tr>
+<tr><td class='const_type'>Int</td><td>STATUS_NULL_POINTER = 7</td></tr>
+<tr><td class='const_type'>Int</td><td>STATUS_PATTERN_TYPE_MISMATCH = 14</td></tr>
+<tr><td class='const_type'>Int</td><td>STATUS_READ_ERROR = 10</td></tr>
+<tr><td class='const_type'>Int</td><td>STATUS_SUCCESS = 0</td></tr>
+<tr><td class='const_type'>Int</td><td>STATUS_SURFACE_FINISHED = 12</td></tr>
+<tr><td class='const_type'>Int</td><td>STATUS_SURFACE_TYPE_MISMATCH = 13</td></tr>
+<tr><td class='const_type'>Int</td><td>STATUS_TEMP_FILE_ERROR = 23</td></tr>
+<tr><td class='const_type'>Int</td><td>STATUS_USER_FONT_ERROR = 27</td></tr>
+<tr><td class='const_type'>Int</td><td>STATUS_USER_FONT_IMMUTABLE = 26</td></tr>
+<tr><td class='const_type'>Int</td><td>STATUS_USER_FONT_NOT_IMPLEMENTED = 33</td></tr>
+<tr><td class='const_type'>Int</td><td>STATUS_WRITE_ERROR = 11</td></tr>
+<tr><td class='const_type'>Int</td><td>SUBPIXEL_ORDER_BGR = 2</td></tr>
+<tr><td class='const_type'>Int</td><td>SUBPIXEL_ORDER_DEFAULT = 0</td></tr>
+<tr><td class='const_type'>Int</td><td>SUBPIXEL_ORDER_RGB = 1</td></tr>
+<tr><td class='const_type'>Int</td><td>SUBPIXEL_ORDER_VBGR = 4</td></tr>
+<tr><td class='const_type'>Int</td><td>SUBPIXEL_ORDER_VRGB = 3</td></tr>
+<tr><td class='const_type'>Int</td><td>SURFACE_TYPE_BEOS = 8</td></tr>
+<tr><td class='const_type'>Int</td><td>SURFACE_TYPE_DIRECTFB = 9</td></tr>
+<tr><td class='const_type'>Int</td><td>SURFACE_TYPE_DRM = 19</td></tr>
+<tr><td class='const_type'>Int</td><td>SURFACE_TYPE_GLITZ = 5</td></tr>
+<tr><td class='const_type'>Int</td><td>SURFACE_TYPE_GL = 18</td></tr>
+<tr><td class='const_type'>Int</td><td>SURFACE_TYPE_IMAGE = 0</td></tr>
+<tr><td class='const_type'>Int</td><td>SURFACE_TYPE_OS2 = 11</td></tr>
+<tr><td class='const_type'>Int</td><td>SURFACE_TYPE_PDF = 1</td></tr>
+<tr><td class='const_type'>Int</td><td>SURFACE_TYPE_PS = 2</td></tr>
+<tr><td class='const_type'>Int</td><td>SURFACE_TYPE_QT = 15</td></tr>
+<tr><td class='const_type'>Int</td><td>SURFACE_TYPE_QUARTZ_IMAGE = 13</td></tr>
+<tr><td class='const_type'>Int</td><td>SURFACE_TYPE_QUARTZ = 6</td></tr>
+<tr><td class='const_type'>Int</td><td>SURFACE_TYPE_RECORDING = 16</td></tr>
+<tr><td class='const_type'>Int</td><td>SURFACE_TYPE_SCRIPT = 14</td></tr>
+<tr><td class='const_type'>Int</td><td>SURFACE_TYPE_SKIA = 22</td></tr>
+<tr><td class='const_type'>Int</td><td>SURFACE_TYPE_SUBSURFACE = 23</td></tr>
+<tr><td class='const_type'>Int</td><td>SURFACE_TYPE_SVG = 10</td></tr>
+<tr><td class='const_type'>Int</td><td>SURFACE_TYPE_TEE = 20</td></tr>
+<tr><td class='const_type'>Int</td><td>SURFACE_TYPE_VG = 17</td></tr>
+<tr><td class='const_type'>Int</td><td>SURFACE_TYPE_WIN32_PRINTING = 12</td></tr>
+<tr><td class='const_type'>Int</td><td>SURFACE_TYPE_WIN32 = 7</td></tr>
+<tr><td class='const_type'>Int</td><td>SURFACE_TYPE_XCB = 4</td></tr>
+<tr><td class='const_type'>Int</td><td>SURFACE_TYPE_XLIB = 3</td></tr>
+<tr><td class='const_type'>Int</td><td>SURFACE_TYPE_XML = 21</td></tr>
+<tr><td class='const_type'>Int</td><td>TEXT_CLUSTER_FLAG_BACKWARD = 1</td></tr>
+<tr><td class='const_type'>Int</td><td>REGION_OVERLAP_OUT = 1</td></tr>
+<tr><td class='const_type'>Int</td><td>REGION_OVERLAP_PART = 2</td></tr>
+<tr><td class='const_type'>Int</td><td>VERSION = 11002</td></tr>
+<tr><td class='const_type'>String</td><td>VERSION_STRING = 1.10.2</td></tr>
+</table><table border=1 cellspacing=0 cellpadding=2>
+<caption>Methods</caption>
+<tr><th>Type</th><th>Description</th></tr>
+<tr><td class='mtd_type'>Cairo</td><td class='mtd_desc'>new(CairoSurface target)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>CairoData</td><td class='mtd_desc'>getUserData(CairoUserDataKey key)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>setUserData(CairoUserDataKey key, CairoData userData, CairoDestroyFunc destroy)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>save()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>destroy()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>restore()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>pushGroup()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>pushGroupWithContent(Int content)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>CairoPattern</td><td class='mtd_desc'>popGroup()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>popGroupToSource()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>setOperator(Int op)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>setSource(CairoPattern source)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>setSourceRgb(Float red, Float green, Float blue)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>setSourceRgba(Float red, Float green, Float blue, Float alpha)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>setSourceSurface(CairoSurface surface, Float x, Float y)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>setTolerance(Float tolerance)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>setAntialias(Int antialias)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>setFillRule(Int fillRule)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>setLineWidth(Float width)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>setLineCap(Int lineCap)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>setLineJoin(Int lineJoin)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>setDash(Float[] dashes, Int numDashes, Float offset)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>setMiterLimit(Float limit)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>translate(Float tx, Float ty)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>scale(Float sx, Float sy)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>rotate(Float angle)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>transform(CairoMatrix matrix)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>setMatrix(CairoMatrix matrix)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>identityMatrix()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>userToDevice(Float[] x, Float[] y)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>userToDeviceDistance(Float[] dx, Float[] dy)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>deviceToUser(Float[] x, Float[] y)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>deviceToUserDistance(Float[] dx, Float[] dy)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>newPath()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>moveTo(Float x, Float y)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>newSubPath()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>lineTo(Float x, Float y)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>curveTo(Float x1, Float y1, Float x2, Float y2, Float x3, Float y3)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>arc(Float xc, Float yc, Float radius, Float angle1, Float angle2)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>arcNegative(Float xc, Float yc, Float radius, Float angle1, Float angle2)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>relMoveTo(Float dx, Float dy)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>relLineTo(Float dx, Float dy)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>relCurveTo(Float dx1, Float dy1, Float dx2, Float dy2, Float dx3, Float dy3)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>rectangle(Float x, Float y, Float width, Float height)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>closePath()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>pathExtents(Float[] x1, Float[] y1, Float[] x2, Float[] y2)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>paint()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>paintWithAlpha(Float alpha)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>mask(CairoPattern pattern)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>maskSurface(CairoSurface surface, Float surfaceX, Float surfaceY)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>stroke()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>strokePreserve()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>fill()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>fillPreserve()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>copyPage()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>showPage()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Boolean</td><td class='mtd_desc'>inStroke(Float x, Float y)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Boolean</td><td class='mtd_desc'>inFill(Float x, Float y)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Boolean</td><td class='mtd_desc'>inClip(Float x, Float y)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>strokeExtents(Float[] x1, Float[] y1, Float[] x2, Float[] y2)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>fillExtents(Float[] x1, Float[] y1, Float[] x2, Float[] y2)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>resetClip()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>clip()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>clipPreserve()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>clipExtents(Float[] x1, Float[] y1, Float[] x2, Float[] y2)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>CairoRectangleList</td><td class='mtd_desc'>copyClipRectangleList()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>selectFontFace(String family, Int slant, Int weight)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>setFontSize(Float size)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>setFontMatrix(CairoMatrix matrix)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>getFontMatrix(CairoMatrix matrix)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>setFontOptions(CairoFontOptions options)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>getFontOptions(CairoFontOptions options)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>setFontFace(CairoFontFace fontFace)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>CairoFontFace</td><td class='mtd_desc'>getFontFace()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>setScaledFont(CairoScaledFont scaledFont)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>CairoScaledFont</td><td class='mtd_desc'>getScaledFont()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>showText(String utf8)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>showGlyphs(CairoGlyph glyphs, Int numGlyphs)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>showTextGlyphs(String utf8, Int utf8Len, CairoGlyph glyphs, Int numGlyphs, CairoTextCluster clusters, Int numClusters, Int clusterFlags)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>textPath(String utf8)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>textExtents(String utf8, CairoTextExtents extents)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>fontExtents(CairoFontExtents extents)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>CairoFontFace</td><td class='mtd_desc'>toyFontFaceCreate(String family, Int slant, Int weight)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>String</td><td class='mtd_desc'>toyFontFaceGetFamily(CairoFontFace fontFace)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>toyFontFaceGetSlant(CairoFontFace fontFace)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>toyFontFaceGetWeight(CairoFontFace fontFace)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>getOperator()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>CairoPattern</td><td class='mtd_desc'>getSource()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Float</td><td class='mtd_desc'>getTolerance()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>getAntialias()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Boolean</td><td class='mtd_desc'>hasCurrentPoint()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>getCurrentPoint(Float[] x, Float[] y)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>getFillRule()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Float</td><td class='mtd_desc'>getLineWidth()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>getLineCap()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>getLineJoin()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Float</td><td class='mtd_desc'>getMiterLimit()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>getDashCount()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>getDash(Float[] dashes, Float[] offset)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>getMatrix(CairoMatrix matrix)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>CairoSurface</td><td class='mtd_desc'>getTarget()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>CairoSurface</td><td class='mtd_desc'>getGroupTarget()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>CairoPath</td><td class='mtd_desc'>copyPath()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>CairoPath</td><td class='mtd_desc'>copyPathFlat()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>appendPath(CairoPath path)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>status()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>String</td><td class='mtd_desc'>statusToString(Int status)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>formatStrideForWidth(Int format, Int width)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>CairoSurface</td><td class='mtd_desc'>recordingSurfaceCreate(Int content, CairoRectangle extents)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>recordingSurfaceInkExtents(CairoSurface surface, Float[] x0, Float[] y0, Float[] width, Float[] height)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+</table><h3>CairoSurface</h3>
+<hr/>
+<table border=1 cellspacing=0 cellpadding=2>
+<caption>Constants</caption>
+<tr><th>Type</th><th>NameAndValue</th></tr>
+</table><table border=1 cellspacing=0 cellpadding=2>
+<caption>Methods</caption>
+<tr><th>Type</th><th>Description</th></tr>
+<tr><td class='mtd_type'>CairoSurface</td><td class='mtd_desc'>createSimilar(CairoSurface other, Int content, Int width, Int height)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>CairoSurface</td><td class='mtd_desc'>createForRectangle(CairoSurface target, Float x, Float y, Float width, Float height)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>finish()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>CairoDevice</td><td class='mtd_desc'>getDevice()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>status()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>getType()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>getContent()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>writeToPng(String filename)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>writeToPngStream(CairoWriteFunc writeFunc, CairoData closure)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>CairoData</td><td class='mtd_desc'>getUserData(CairoUserDataKey key)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>setUserData(CairoUserDataKey key, CairoData userData, CairoDestroyFunc destroy)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>getMimeData(String mimeType, String[] data, Int[] length)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>setMimeData(String mimeType, String data, Int length, CairoDestroyFunc destroy, CairoData closure)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>getFontOptions(CairoFontOptions options)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>flush()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>markDirty()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>markDirtyRectangle(Int x, Int y, Int width, Int height)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>setDeviceOffset(Float xoffset, Float yoffset)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>getDeviceOffset(Float[] xoffset, Float[] yoffset)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>setFallbackResolution(Float xpixelsPerInch, Float ypixelsPerInch)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>getFallbackResolution(Float[] xpixelsPerInch, Float[] ypixelsPerInch)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>copyPage()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>showPage()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Boolean</td><td class='mtd_desc'>hasShowTextGlyphs()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+</table><h3>CairoImageSurface</h3>
+<hr/>
+<table border=1 cellspacing=0 cellpadding=2>
+<caption>Constants</caption>
+<tr><th>Type</th><th>NameAndValue</th></tr>
+</table><table border=1 cellspacing=0 cellpadding=2>
+<caption>Methods</caption>
+<tr><th>Type</th><th>Description</th></tr>
+<tr><td class='mtd_type'>CairoImageSurface</td><td class='mtd_desc'>new(Int format, Int width, Int height)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>CairoImageSurface</td><td class='mtd_desc'>createForData(String data, Int format, Int width, Int height, Int stride)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>String</td><td class='mtd_desc'>getData()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>getFormat()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>getWidth()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>getHeight()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>getStride()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>CairoImageSurface</td><td class='mtd_desc'>createFromPng(String filename)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>CairoImageSurface</td><td class='mtd_desc'>createFromPngStream(CairoReadFunc readFunc, CairoData closure)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+</table><h3>CairoMatrix</h3>
+<hr/>
+<table border=1 cellspacing=0 cellpadding=2>
+<caption>Constants</caption>
+<tr><th>Type</th><th>NameAndValue</th></tr>
+</table><table border=1 cellspacing=0 cellpadding=2>
+<caption>Methods</caption>
+<tr><th>Type</th><th>Description</th></tr>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>init(CairoMatrix matrix, Float xx, Float yx, Float xy, Float yy, Float x0, Float y0)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>initIdentity(CairoMatrix matrix)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>initTranslate(CairoMatrix matrix, Float tx, Float ty)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>initScale(CairoMatrix matrix, Float sx, Float sy)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>initRotate(CairoMatrix matrix, Float radians)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>translate(CairoMatrix matrix, Float tx, Float ty)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>scale(CairoMatrix matrix, Float sx, Float sy)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>rotate(CairoMatrix matrix, Float radians)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>invert(CairoMatrix matrix)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>multiply(CairoMatrix result, CairoMatrix a, CairoMatrix b)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>transformDistance(CairoMatrix matrix, Float[] dx, Float[] dy)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>transformPoint(CairoMatrix matrix, Float[] x, Float[] y)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>init(CairoMatrix matrix, Float xx, Float yx, Float xy, Float yy, Float x0, Float y0)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>initIdentity(CairoMatrix matrix)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>initTranslate(CairoMatrix matrix, Float tx, Float ty)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>initScale(CairoMatrix matrix, Float sx, Float sy)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>initRotate(CairoMatrix matrix, Float radians)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>translate(CairoMatrix matrix, Float tx, Float ty)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>scale(CairoMatrix matrix, Float sx, Float sy)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>rotate(CairoMatrix matrix, Float radians)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>invert(CairoMatrix matrix)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>multiply(CairoMatrix result, CairoMatrix a, CairoMatrix b)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>transformDistance(CairoMatrix matrix, Float[] dx, Float[] dy)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>transformPoint(CairoMatrix matrix, Float[] x, Float[] y)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+</table><h3>CairoPattern</h3>
+<hr/>
+<table border=1 cellspacing=0 cellpadding=2>
+<caption>Constants</caption>
+<tr><th>Type</th><th>NameAndValue</th></tr>
+</table><table border=1 cellspacing=0 cellpadding=2>
+<caption>Methods</caption>
+<tr><th>Type</th><th>Description</th></tr>
+<tr><td class='mtd_type'>CairoPattern</td><td class='mtd_desc'>createRgb(Float red, Float green, Float blue)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>CairoPattern</td><td class='mtd_desc'>createRgba(Float red, Float green, Float blue, Float alpha)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>CairoPattern</td><td class='mtd_desc'>createForSurface(CairoSurface surface)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>CairoPattern</td><td class='mtd_desc'>createLinear(Float x0, Float y0, Float x1, Float y1)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>CairoPattern</td><td class='mtd_desc'>createRadial(Float cx0, Float cy0, Float radius0, Float cx1, Float cy1, Float radius1)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>status(CairoPattern pattern)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>CairoData</td><td class='mtd_desc'>getUserData(CairoPattern pattern, CairoUserDataKey key)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>setUserData(CairoPattern pattern, CairoUserDataKey key, CairoData userData, CairoDestroyFunc destroy)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>getType(CairoPattern pattern)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>addColorStopRgb(CairoPattern pattern, Float offset, Float red, Float green, Float blue)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>addColorStopRgba(CairoPattern pattern, Float offset, Float red, Float green, Float blue, Float alpha)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>setMatrix(CairoMatrix matrix)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>getMatrix(CairoMatrix matrix)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>setExtend(Int extend)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>getExtend()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>setFilter(Int filter)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>getFilter()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>getRgba(Float[] red, Float[] green, Float[] blue, Float[] alpha)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>getSurface(CairoPattern pattern, CairoSurface surface)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>getColorStopRgba(CairoPattern pattern, Int index, Float[] offset, Float[] red, Float[] green, Float[] blue, Float[] alpha)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>getColorStopCount(CairoPattern pattern, Int[] count)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>getLinearPoints(CairoPattern pattern, Float[] x0, Float[] y0, Float[] x1, Float[] y1)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>getRadialCircles(CairoPattern pattern, Float[] x0, Float[] y0, Float[] r0, Float[] x1, Float[] y1, Float[] r1)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+</table><h3>CairoScaledFont</h3>
+<hr/>
+<table border=1 cellspacing=0 cellpadding=2>
+<caption>Constants</caption>
+<tr><th>Type</th><th>NameAndValue</th></tr>
+</table><table border=1 cellspacing=0 cellpadding=2>
+<caption>Methods</caption>
+<tr><th>Type</th><th>Description</th></tr>
+<tr><td class='mtd_type'>CairoScaledFont</td><td class='mtd_desc'>create(CairoFontFace fontFace, CairoMatrix fontMatrix, CairoMatrix ctm, CairoFontOptions options)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>status()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>getType()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>CairoData</td><td class='mtd_desc'>getUserData(CairoUserDataKey key)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>setUserData(CairoUserDataKey key, CairoData userData, CairoDestroyFunc destroy)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>extents(CairoFontExtents extents)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>textExtents(String utf8, CairoTextExtents extents)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>glyphExtents(CairoGlyph glyphs, Int numGlyphs, CairoTextExtents extents)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>CairoFontFace</td><td class='mtd_desc'>getFontFace()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>getFontMatrix(CairoMatrix fontMatrix)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>getCtm(CairoMatrix ctm)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>getScaleMatrix(CairoMatrix scaleMatrix)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>getFontOptions(CairoFontOptions options)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+</table><h3>CairoGlyph</h3>
+<hr/>
+<table border=1 cellspacing=0 cellpadding=2>
+<caption>Constants</caption>
+<tr><th>Type</th><th>NameAndValue</th></tr>
+</table><table border=1 cellspacing=0 cellpadding=2>
+<caption>Methods</caption>
+<tr><th>Type</th><th>Description</th></tr>
+<tr><td class='mtd_type'>CairoGlyph</td><td class='mtd_desc'>new(Int numGlyphs)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>path(Int numGlyphs)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>extents(Int numGlyphs, CairoTextExtents extents)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+</table><h3>CairoTextCluster</h3>
+<hr/>
+<table border=1 cellspacing=0 cellpadding=2>
+<caption>Constants</caption>
+<tr><th>Type</th><th>NameAndValue</th></tr>
+</table><table border=1 cellspacing=0 cellpadding=2>
+<caption>Methods</caption>
+<tr><th>Type</th><th>Description</th></tr>
+<tr><td class='mtd_type'>CairoTextCluster</td><td class='mtd_desc'>new(Int numClusters)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+</table><h3>CairoFontOptions</h3>
+<hr/>
+<table border=1 cellspacing=0 cellpadding=2>
+<caption>Constants</caption>
+<tr><th>Type</th><th>NameAndValue</th></tr>
+</table><table border=1 cellspacing=0 cellpadding=2>
+<caption>Methods</caption>
+<tr><th>Type</th><th>Description</th></tr>
+<tr><td class='mtd_type'>CairoFontOptions</td><td class='mtd_desc'>new()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>CairoFontOptions</td><td class='mtd_desc'>copy(CairoFontOptions original)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>status(CairoFontOptions options)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>merge(CairoFontOptions options, CairoFontOptions other)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>hash(CairoFontOptions options)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>setAntialias(CairoFontOptions options, Int antialias)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>getAntialias(CairoFontOptions options)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>setSubpixelOrder(CairoFontOptions options, Int subpixelOrder)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>getSubpixelOrder(CairoFontOptions options)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>setHintStyle(CairoFontOptions options, Int hintStyle)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>getHintStyle(CairoFontOptions options)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>setHintMetrics(CairoFontOptions options, Int hintMetrics)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>getHintMetrics(CairoFontOptions options)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+</table><h3>CairoFontFace</h3>
+<hr/>
+<table border=1 cellspacing=0 cellpadding=2>
+<caption>Constants</caption>
+<tr><th>Type</th><th>NameAndValue</th></tr>
+</table><table border=1 cellspacing=0 cellpadding=2>
+<caption>Methods</caption>
+<tr><th>Type</th><th>Description</th></tr>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>status()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>getType()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>CairoData</td><td class='mtd_desc'>getUserData(CairoUserDataKey key)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>setUserData(CairoUserDataKey key, CairoData userData, CairoDestroyFunc destroy)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+</table><h3>CairoUserFontFace</h3>
+<hr/>
+<table border=1 cellspacing=0 cellpadding=2>
+<caption>Constants</caption>
+<tr><th>Type</th><th>NameAndValue</th></tr>
+</table><table border=1 cellspacing=0 cellpadding=2>
+<caption>Methods</caption>
+<tr><th>Type</th><th>Description</th></tr>
+<tr><td class='mtd_type'>CairoFontFace</td><td class='mtd_desc'>create()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>setInitFunc(CairoFontFace fontFace, Int initFunc)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>setRenderGlyphFunc(CairoFontFace fontFace, CairoUserScaledFontRenderGlyphFunc renderGlyphFunc)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>setTextToGlyphsFunc(CairoFontFace fontFace, CairoUserScaledFontTextToGlyphsFunc textToGlyphsFunc)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>setUnicodeToGlyphFunc(CairoFontFace fontFace, CairoUserScaledFontUnicodeToGlyphFunc unicodeToGlyphFunc)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>var</td><td class='mtd_desc'>getInitFunc(CairoFontFace fontFace)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>CairoUserScaledFontRenderGlyphFunc</td><td class='mtd_desc'>getRenderGlyphFunc(CairoFontFace fontFace)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>CairoUserScaledFontTextToGlyphsFunc</td><td class='mtd_desc'>getTextToGlyphsFunc(CairoFontFace fontFace)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>CairoUserScaledFontUnicodeToGlyphFunc</td><td class='mtd_desc'>getUnicodeToGlyphFunc(CairoFontFace fontFace)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+</table><h3>CairoRegion</h3>
+<hr/>
+<table border=1 cellspacing=0 cellpadding=2>
+<caption>Constants</caption>
+<tr><th>Type</th><th>NameAndValue</th></tr>
+</table><table border=1 cellspacing=0 cellpadding=2>
+<caption>Methods</caption>
+<tr><th>Type</th><th>Description</th></tr>
+<tr><td class='mtd_type'>CairoRegion</td><td class='mtd_desc'>new()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>CairoRegion</td><td class='mtd_desc'>createRectangle(CairoRectangleInt rectangle)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>CairoRegion</td><td class='mtd_desc'>createRectangles(CairoRectangleInt rects, Int count)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>CairoRegion</td><td class='mtd_desc'>copy(CairoRegion original)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>status()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>getExtents(CairoRectangleInt extents)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>numRectangles()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>getRectangle(Int nth, CairoRectangleInt rectangle)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Boolean</td><td class='mtd_desc'>isEmpty()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>containsRectangle(CairoRectangleInt rectangle)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Boolean</td><td class='mtd_desc'>containsPoint(Int x, Int y)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>translate(Int dx, Int dy)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>subtract(CairoRegion other)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>subtractRectangle(CairoRectangleInt rectangle)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>intersect(CairoRegion other)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>intersectRectangle(CairoRectangleInt rectangle)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>union(CairoRegion other)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>unionRectangle(CairoRectangleInt rectangle)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>xor(CairoRegion other)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>xorRectangle(CairoRectangleInt rectangle)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+</table><h3>CairoDevice</h3>
+<hr/>
+<table border=1 cellspacing=0 cellpadding=2>
+<caption>Constants</caption>
+<tr><th>Type</th><th>NameAndValue</th></tr>
+</table><table border=1 cellspacing=0 cellpadding=2>
+<caption>Methods</caption>
+<tr><th>Type</th><th>Description</th></tr>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>getType()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>status()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>acquire()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>release()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>flush()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>finish()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>CairoData</td><td class='mtd_desc'>getUserData(CairoUserDataKey key)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>setUserData(CairoUserDataKey key, CairoData userData, CairoDestroyFunc destroy)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+</table></body></html>

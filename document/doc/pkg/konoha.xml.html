@@ -1,0 +1,84 @@
+<html><body>
+<h3>XmlReader</h3>
+<hr/>
+<table border=1 cellspacing=0 cellpadding=2>
+<caption>Constants</caption>
+<tr><th>Type</th><th>NameAndValue</th></tr>
+<tr><td class='const_type'>Int</td><td>TYPE_ATTRIBUTE = 2</td></tr>
+<tr><td class='const_type'>Int</td><td>TYPE_CDATA = 4</td></tr>
+<tr><td class='const_type'>Int</td><td>TYPE_COMMENT = 8</td></tr>
+<tr><td class='const_type'>Int</td><td>TYPE_DOCUMENT_FRAGMENT = 11</td></tr>
+<tr><td class='const_type'>Int</td><td>TYPE_DOCUMENT_TYPE = 10</td></tr>
+<tr><td class='const_type'>Int</td><td>TYPE_DOCUMENT = 9</td></tr>
+<tr><td class='const_type'>Int</td><td>TYPE_ELEMENT = 1</td></tr>
+<tr><td class='const_type'>Int</td><td>TYPE_END_ELEMENT = 15</td></tr>
+<tr><td class='const_type'>Int</td><td>TYPE_ENTITY = 6</td></tr>
+<tr><td class='const_type'>Int</td><td>TYPE_NONE = 0</td></tr>
+<tr><td class='const_type'>Int</td><td>TYPE_NOTATION = 12</td></tr>
+<tr><td class='const_type'>Int</td><td>TYPE_PROCESSING_INSTRUCTION = 7</td></tr>
+<tr><td class='const_type'>Int</td><td>TYPE_REFERENCE = 5</td></tr>
+<tr><td class='const_type'>Int</td><td>TYPE_SIGNIFICANT_WHITESPACE = 14</td></tr>
+<tr><td class='const_type'>Int</td><td>TYPE_TEXT = 3</td></tr>
+<tr><td class='const_type'>Int</td><td>TYPE_WHITESPACE = 13</td></tr>
+<tr><td class='const_type'>Int</td><td>TYPE_END_ENTITY = 16</td></tr>
+<tr><td class='const_type'>Int</td><td>TYPE_XML_DECLATION = 17</td></tr>
+</table><table border=1 cellspacing=0 cellpadding=2>
+<caption>Methods</caption>
+<tr><th>Type</th><th>Description</th></tr>
+<tr><td class='mtd_type'>XmlReader</td><td class='mtd_desc'>new(String filename)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>close()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>String</td><td class='mtd_desc'>getQuoteChar()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Boolean</td><td class='mtd_desc'>read()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>readState()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>nodeType()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>getAttributeCount()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>getDepth()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Boolean</td><td class='mtd_desc'>isEmptyElement()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Boolean</td><td class='mtd_desc'>isNamespaceDecl()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Boolean</td><td class='mtd_desc'>hasAttributes()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Boolean</td><td class='mtd_desc'>hasValue()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Boolean</td><td class='mtd_desc'>moveToFirstAttribute()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Boolean</td><td class='mtd_desc'>moveToNextAttribute()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Boolean</td><td class='mtd_desc'>moveToElement()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>String</td><td class='mtd_desc'>constBaseUri()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>String</td><td class='mtd_desc'>constEncoding()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>String</td><td class='mtd_desc'>constValue()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>String</td><td class='mtd_desc'>constNamespaceUri()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>String</td><td class='mtd_desc'>constLocalName()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>String</td><td class='mtd_desc'>constName()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>String</td><td class='mtd_desc'>constXmlLang()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>String</td><td class='mtd_desc'>constPrefix()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>String</td><td class='mtd_desc'>getAttribute()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>String</td><td class='mtd_desc'>getAttributeNo(Int numer)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>String</td><td class='mtd_desc'>getAttributeNS(String ns, String name)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>String</td><td class='mtd_desc'>lookupNameSpace(String ns)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>normalization()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+</table></body></html>

@@ -1,0 +1,60 @@
+<html><body>
+<h3>Memcache</h3>
+<hr/>
+<table border=1 cellspacing=0 cellpadding=2>
+<caption>Constants</caption>
+<tr><th>Type</th><th>NameAndValue</th></tr>
+<tr><td class='const_type'>Int</td><td>DEFAULT_PORT = 11211</td></tr>
+<tr><td class='const_type'>Int</td><td>MAX_KEY = 251</td></tr>
+<tr><td class='const_type'>Int</td><td>STRIDE = 4</td></tr>
+<tr><td class='const_type'>Int</td><td>LIBMEMCACHED_VERSION_HEX = 278528</td></tr>
+</table><table border=1 cellspacing=0 cellpadding=2>
+<caption>Methods</caption>
+<tr><th>Type</th><th>Description</th></tr>
+<tr><td class='mtd_type'>Memcache</td><td class='mtd_desc'>new(String host, Int port)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>increment(String key, Int offset)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>decrement(String key, Int offset)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Boolean</td><td class='mtd_desc'>delete(String key, Int expirationSec)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Boolean</td><td class='mtd_desc'>deleteByKey(String groupKey, String key, Int expirationSec)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Boolean</td><td class='mtd_desc'>flushBuffers()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Boolean</td><td class='mtd_desc'>flush(Int expirationSec)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>String</td><td class='mtd_desc'>get(String key)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>String[]</td><td class='mtd_desc'>mGet(String[] keys)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>String</td><td class='mtd_desc'>getByKey(String groupKey, String key)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>String[]</td><td class='mtd_desc'>mGetByKey(String groupKey, String[] keys)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>set(String key, String value, Int expirationSec, Int falgs)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>add(String key, String value, Int expirationSec, Int flags)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>replace(String key, String value, Int expirationSec, Int flags)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>setByKey(String groupKey, String key, String value, Int expirationSec, Int flags)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>addByKey(String groupKey, String key, String value, Int expirationSec, Int flags)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>replaceByKey(String groupKey, String key, String value, Int expirationSec, Int flags)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Boolean</td><td class='mtd_desc'>prepend(String key, String value, Int expirationSec, Int flags)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Boolean</td><td class='mtd_desc'>append(String key, String value, Int expirationSec, Int flags)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Boolean</td><td class='mtd_desc'>prependByKey(String groupKey, String key, String vlaue, Int expirationSec, Int flags)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Boolean</td><td class='mtd_desc'>appendByKey(String groupKey, String key, String vlaue, Int expirationSec, Int flags)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>serverAdd(String host, Int port)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Map&lt;String,Int&gt;</td><td class='mtd_desc'>serverByKey(String key)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+</table></body></html>

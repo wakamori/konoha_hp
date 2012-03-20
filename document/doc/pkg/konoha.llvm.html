@@ -1,0 +1,859 @@
+<html><body>
+<h3>Type</h3>
+<hr/>
+<table border=1 cellspacing=0 cellpadding=2>
+<caption>Constants</caption>
+<tr><th>Type</th><th>NameAndValue</th></tr>
+</table><table border=1 cellspacing=0 cellpadding=2>
+<caption>Methods</caption>
+<tr><th>Type</th><th>Description</th></tr>
+<tr><td class='mtd_type'>Type</td><td class='mtd_desc'>getVoidTy()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Type</td><td class='mtd_desc'>getLabelTy()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Type</td><td class='mtd_desc'>getFloatTy()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Type</td><td class='mtd_desc'>getDoubleTy()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Type</td><td class='mtd_desc'>getMetadataTy()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Type</td><td class='mtd_desc'>getX86FP80Ty()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Type</td><td class='mtd_desc'>getFP128Ty()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Type</td><td class='mtd_desc'>getPPCFP128Ty()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Type</td><td class='mtd_desc'>getX86MMXTy()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>IntegerType</td><td class='mtd_desc'>getInt1Ty()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>IntegerType</td><td class='mtd_desc'>getInt8Ty()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>IntegerType</td><td class='mtd_desc'>getInt16Ty()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>IntegerType</td><td class='mtd_desc'>getInt32Ty()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>IntegerType</td><td class='mtd_desc'>getInt64Ty()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>PointerType</td><td class='mtd_desc'>getFloatPtrTy()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>PointerType</td><td class='mtd_desc'>getDoublePtrTy()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>PointerType</td><td class='mtd_desc'>getX86FP80PtrTy()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>PointerType</td><td class='mtd_desc'>getFP128PtrTy()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>PointerType</td><td class='mtd_desc'>getPPCFP128PtrTy()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>PointerType</td><td class='mtd_desc'>getX86MMXPtrTy()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>PointerType</td><td class='mtd_desc'>getInt1PtrTy()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>PointerType</td><td class='mtd_desc'>getInt8PtrTy()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>PointerType</td><td class='mtd_desc'>getInt16PtrTy()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>PointerType</td><td class='mtd_desc'>getInt32PtrTy()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>PointerType</td><td class='mtd_desc'>getInt64PtrTy()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>dump()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+</table><h3>PointerType</h3>
+<hr/>
+<table border=1 cellspacing=0 cellpadding=2>
+<caption>Constants</caption>
+<tr><th>Type</th><th>NameAndValue</th></tr>
+</table><table border=1 cellspacing=0 cellpadding=2>
+<caption>Methods</caption>
+<tr><th>Type</th><th>Description</th></tr>
+<tr><td class='mtd_type'>PointerType</td><td class='mtd_desc'>get(Type type)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+</table><h3>FunctionType</h3>
+<hr/>
+<table border=1 cellspacing=0 cellpadding=2>
+<caption>Constants</caption>
+<tr><th>Type</th><th>NameAndValue</th></tr>
+</table><table border=1 cellspacing=0 cellpadding=2>
+<caption>Methods</caption>
+<tr><th>Type</th><th>Description</th></tr>
+<tr><td class='mtd_type'>FunctionType</td><td class='mtd_desc'>get(Type retTy, Type[] args, Boolean b)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+</table><h3>StructType</h3>
+<hr/>
+<table border=1 cellspacing=0 cellpadding=2>
+<caption>Constants</caption>
+<tr><th>Type</th><th>NameAndValue</th></tr>
+</table><table border=1 cellspacing=0 cellpadding=2>
+<caption>Methods</caption>
+<tr><th>Type</th><th>Description</th></tr>
+<tr><td class='mtd_type'>StructType</td><td class='mtd_desc'>get(Type[] args, Boolean isPacked)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>StructType</td><td class='mtd_desc'>create(Type[] args, String name, Boolean isPacked)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>setBody(Type[] args, Boolean isPacked)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Boolean</td><td class='mtd_desc'>isOpaque()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+</table><h3>ArrayType</h3>
+<hr/>
+<table border=1 cellspacing=0 cellpadding=2>
+<caption>Constants</caption>
+<tr><th>Type</th><th>NameAndValue</th></tr>
+</table><table border=1 cellspacing=0 cellpadding=2>
+<caption>Methods</caption>
+<tr><th>Type</th><th>Description</th></tr>
+<tr><td class='mtd_type'>ArrayType</td><td class='mtd_desc'>get(Type t, Int elemSize)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+</table><h3>Value</h3>
+<hr/>
+<table border=1 cellspacing=0 cellpadding=2>
+<caption>Constants</caption>
+<tr><th>Type</th><th>NameAndValue</th></tr>
+</table><table border=1 cellspacing=0 cellpadding=2>
+<caption>Methods</caption>
+<tr><th>Type</th><th>Description</th></tr>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>dump()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>replaceAllUsesWith(Value v)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>setName(String name)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Type</td><td class='mtd_desc'>getType()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+</table><h3>Argument</h3>
+<hr/>
+<table border=1 cellspacing=0 cellpadding=2>
+<caption>Constants</caption>
+<tr><th>Type</th><th>NameAndValue</th></tr>
+</table><table border=1 cellspacing=0 cellpadding=2>
+<caption>Methods</caption>
+<tr><th>Type</th><th>Description</th></tr>
+<tr><td class='mtd_type'>Argument</td><td class='mtd_desc'>new(Type type)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+</table><h3>ConstantInt</h3>
+<hr/>
+<table border=1 cellspacing=0 cellpadding=2>
+<caption>Constants</caption>
+<tr><th>Type</th><th>NameAndValue</th></tr>
+</table><table border=1 cellspacing=0 cellpadding=2>
+<caption>Methods</caption>
+<tr><th>Type</th><th>Description</th></tr>
+<tr><td class='mtd_type'>Constant</td><td class='mtd_desc'>get(Type type, Int v)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+</table><h3>ConstantFP</h3>
+<hr/>
+<table border=1 cellspacing=0 cellpadding=2>
+<caption>Constants</caption>
+<tr><th>Type</th><th>NameAndValue</th></tr>
+</table><table border=1 cellspacing=0 cellpadding=2>
+<caption>Methods</caption>
+<tr><th>Type</th><th>Description</th></tr>
+<tr><td class='mtd_type'>Constant</td><td class='mtd_desc'>get(Type type, Float v)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+</table><h3>ConstantPointerNull</h3>
+<hr/>
+<table border=1 cellspacing=0 cellpadding=2>
+<caption>Constants</caption>
+<tr><th>Type</th><th>NameAndValue</th></tr>
+</table><table border=1 cellspacing=0 cellpadding=2>
+<caption>Methods</caption>
+<tr><th>Type</th><th>Description</th></tr>
+<tr><td class='mtd_type'>Constant</td><td class='mtd_desc'>get(Type type)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+</table><h3>ConstantStruct</h3>
+<hr/>
+<table border=1 cellspacing=0 cellpadding=2>
+<caption>Constants</caption>
+<tr><th>Type</th><th>NameAndValue</th></tr>
+</table><table border=1 cellspacing=0 cellpadding=2>
+<caption>Methods</caption>
+<tr><th>Type</th><th>Description</th></tr>
+<tr><td class='mtd_type'>Constant</td><td class='mtd_desc'>get(Type type, Constant[] v)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+</table><h3>GlobalVariable</h3>
+<hr/>
+<table border=1 cellspacing=0 cellpadding=2>
+<caption>Constants</caption>
+<tr><th>Type</th><th>NameAndValue</th></tr>
+</table><table border=1 cellspacing=0 cellpadding=2>
+<caption>Methods</caption>
+<tr><th>Type</th><th>Description</th></tr>
+<tr><td class='mtd_type'>GlobalVariable</td><td class='mtd_desc'>new(Module m, Type ty, Constant c, Int linkage, String name)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+</table><h3>IRBuilder</h3>
+<hr/>
+<table border=1 cellspacing=0 cellpadding=2>
+<caption>Constants</caption>
+<tr><th>Type</th><th>NameAndValue</th></tr>
+</table><table border=1 cellspacing=0 cellpadding=2>
+<caption>Methods</caption>
+<tr><th>Type</th><th>Description</th></tr>
+<tr><td class='mtd_type'>IRBuilder</td><td class='mtd_desc'>new(BasicBlock bb)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>ReturnInst</td><td class='mtd_desc'>createRetVoid()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>ReturnInst</td><td class='mtd_desc'>createRet(Value v)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>BranchInst</td><td class='mtd_desc'>createBr(BasicBlock dest)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>BranchInst</td><td class='mtd_desc'>createCondBr(Value cond, BasicBlock trueBB, BasicBlock falseBB)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>var</td><td class='mtd_desc'>createSwitch(Value v, BasicBlock dest)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>var</td><td class='mtd_desc'>createIndirectBr(Value addr)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>var</td><td class='mtd_desc'>createInvoke0(Value callee, BasicBlock normalDest, BasicBlock unwindDest)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>var</td><td class='mtd_desc'>createInvoke1(Value callee, BasicBlock normalDest, BasicBlock unwindDest, Value arg1)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>var</td><td class='mtd_desc'>createInvoke3(Value callee, BasicBlock normalDest, BasicBlock unwindDest, Value arg1, Value arg2, Value arg3)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>var</td><td class='mtd_desc'>createUnreachable()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createAdd(Value lhs, Value rhs)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createNSWAdd(Value lhs, Value rhs)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createNUWAdd(Value lhs, Value rhs)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createFAdd(Value lhs, Value rhs)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createSub(Value lhs, Value rhs)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createNSWSub(Value lhs, Value rhs)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createNUWSub(Value lhs, Value rhs)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createFSub(Value lhs, Value rhs)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createMul(Value lhs, Value rhs)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createNSWMul(Value lhs, Value rhs)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createNUWMul(Value lhs, Value rhs)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createFMul(Value lhs, Value rhs)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createUDiv(Value lhs, Value rhs)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createExactUDiv(Value lhs, Value rhs)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createSDiv(Value lhs, Value rhs)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createExactSDiv(Value lhs, Value rhs)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createFDiv(Value lhs, Value rhs)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createURem(Value lhs, Value rhs)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createSRem(Value lhs, Value rhs)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createFRem(Value lhs, Value rhs)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createShl(Value lhs, Value rhs)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createLShr(Value lhs, Value rhs)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createAShr(Value lhs, Value rhs)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createAnd(Value lhs, Value rhs)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createOr(Value lhs, Value rhs)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createXor(Value lhs, Value rhs)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createNeg(Value v)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createNSWNeg(Value v)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createNUWNeg(Value v)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createFNeg(Value v)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createNot(Value v)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>AllocaInst</td><td class='mtd_desc'>createAlloca(Type ty, Value arraySize)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>LoadInst</td><td class='mtd_desc'>createLoad(Value ptr, Boolean isVolatile)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>StoreInst</td><td class='mtd_desc'>createStore(Value val, Value ptr, Boolean isVolatile)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createGEP(Value ptr, Value[] idxList)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createInBoundsGEP(Value ptr, Value[] idxList)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createGEP1(Value ptr, Value idx)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createInBoundsGEP1(Value ptr, Value idx)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createConstGEP132(Value ptr, Int idx0)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createConstInBoundsGEP132(Value ptr, Int idx0)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createConstGEP232(Value ptr, Int idx0, Int idx1)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createConstInBoundsGEP232(Value ptr, Int idx0, Int idx1)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createConstGEP164(Value ptr, Int idx0)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createConstInBoundsGEP164(Value ptr, Int idx0)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createConstGEP264(Value ptr, Int idx0, Int idx1)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createConstInBoundsGEP264(Value ptr, Int idx0, Int idx1)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createStructGEP(Value ptr, Int idx)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createGlobalString(String str)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createGlobalStringPtr(String str)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createTrunc(Value v, Type destTy)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createZExt(Value v, Type destTy)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createSExt(Value v, Type destTy)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createFPToUI(Value v, Type destTy)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createFPToSI(Value v, Type destTy)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createUIToFP(Value v, Type destTy)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createSIToFP(Value v, Type destTy)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createFPTrunc(Value v, Type destTy)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createFPExt(Value v, Type destTy)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createPtrToInt(Value v, Type destTy)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createIntToPtr(Value v, Type destTy)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createBitCast(Value v, Type destTy)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createZExtOrBitCast(Value v, Type destTy)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createSExtOrBitCast(Value v, Type destTy)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createTruncOrBitCast(Value v, Type destTy)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createPointerCast(Value v, Type destTy)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createIntCast(Value v, Type destTy, Boolean isSigned)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createFPCast(Value v, Type destTy)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createICmpEQ(Value lhs, Value rhs)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createICmpNE(Value lhs, Value rhs)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createICmpUGT(Value lhs, Value rhs)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createICmpUGE(Value lhs, Value rhs)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createICmpULT(Value lhs, Value rhs)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createICmpULE(Value lhs, Value rhs)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createICmpSGT(Value lhs, Value rhs)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createICmpSGE(Value lhs, Value rhs)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createICmpSLT(Value lhs, Value rhs)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createICmpSLE(Value lhs, Value rhs)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createFCmpOEQ(Value lhs, Value rhs)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createFCmpOGT(Value lhs, Value rhs)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createFCmpOGE(Value lhs, Value rhs)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createFCmpOLT(Value lhs, Value rhs)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createFCmpOLE(Value lhs, Value rhs)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createFCmpONE(Value lhs, Value rhs)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createFCmpORD(Value lhs, Value rhs)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createFCmpUNO(Value lhs, Value rhs)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createFCmpUEQ(Value lhs, Value rhs)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createFCmpUGT(Value lhs, Value rhs)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createFCmpUGE(Value lhs, Value rhs)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createFCmpULT(Value lhs, Value rhs)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createFCmpULE(Value lhs, Value rhs)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createFCmpUNE(Value lhs, Value rhs)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>PHINode</td><td class='mtd_desc'>createPHI(Type ty, Int numReservedValues)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>CallInst</td><td class='mtd_desc'>createCall1(Value callee, Value arg)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>CallInst</td><td class='mtd_desc'>createCall2(Value callee, Value arg1, Value arg2)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>CallInst</td><td class='mtd_desc'>createCall3(Value callee, Value arg1, Value arg2, Value arg3)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>CallInst</td><td class='mtd_desc'>createCall4(Value callee, Value arg1, Value arg2, Value arg3, Value arg4)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>CallInst</td><td class='mtd_desc'>createCall5(Value callee, Value arg1, Value arg2, Value arg3, Value arg4, Value arg5)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>CallInst</td><td class='mtd_desc'>createCall(Value callee, Value[] args)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createSelect(Value c, Value trueV, Value falseV)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>var</td><td class='mtd_desc'>createVAArg(Value list, Type ty)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createExtractElement(Value vec, Value idx)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createInsertElement(Value vec, Value newElt, Value idx)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createShuffleVector(Value v1, Value v2, Value mask)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createIsNull(Value arg)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createIsNotNull(Value arg)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value</td><td class='mtd_desc'>createPtrDiff(Value lhs, Value rhs)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>setInsertPoint(BasicBlock bb)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>BasicBlock</td><td class='mtd_desc'>getInsertBlock()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+</table><h3>Instruction</h3>
+<hr/>
+<table border=1 cellspacing=0 cellpadding=2>
+<caption>Constants</caption>
+<tr><th>Type</th><th>NameAndValue</th></tr>
+</table><table border=1 cellspacing=0 cellpadding=2>
+<caption>Methods</caption>
+<tr><th>Type</th><th>Description</th></tr>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>setMetadata(Module m, String name, Int value)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+</table><h3>AllocaInst</h3>
+<hr/>
+<table border=1 cellspacing=0 cellpadding=2>
+<caption>Constants</caption>
+<tr><th>Type</th><th>NameAndValue</th></tr>
+</table><table border=1 cellspacing=0 cellpadding=2>
+<caption>Methods</caption>
+<tr><th>Type</th><th>Description</th></tr>
+<tr><td class='mtd_type'>AllocaInst</td><td class='mtd_desc'>new(Type ty, Value arraySize)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+</table><h3>LoadInst</h3>
+<hr/>
+<table border=1 cellspacing=0 cellpadding=2>
+<caption>Constants</caption>
+<tr><th>Type</th><th>NameAndValue</th></tr>
+</table><table border=1 cellspacing=0 cellpadding=2>
+<caption>Methods</caption>
+<tr><th>Type</th><th>Description</th></tr>
+<tr><td class='mtd_type'>LoadInst</td><td class='mtd_desc'>new(Value ptr)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>setAlignment(Int align)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+</table><h3>StoreInst</h3>
+<hr/>
+<table border=1 cellspacing=0 cellpadding=2>
+<caption>Constants</caption>
+<tr><th>Type</th><th>NameAndValue</th></tr>
+</table><table border=1 cellspacing=0 cellpadding=2>
+<caption>Methods</caption>
+<tr><th>Type</th><th>Description</th></tr>
+<tr><td class='mtd_type'>StoreInst</td><td class='mtd_desc'>new(Value val, Value ptr)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>setAlignment(Int align)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+</table><h3>GetElementPtrInst</h3>
+<hr/>
+<table border=1 cellspacing=0 cellpadding=2>
+<caption>Constants</caption>
+<tr><th>Type</th><th>NameAndValue</th></tr>
+</table><table border=1 cellspacing=0 cellpadding=2>
+<caption>Methods</caption>
+<tr><th>Type</th><th>Description</th></tr>
+<tr><td class='mtd_type'>GetElementPtrInst</td><td class='mtd_desc'>create(Value ptr, Value[] idxList)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>GetElementPtrInst</td><td class='mtd_desc'>createInBounds(Value ptr, Value[] idxList)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+</table><h3>BasicBlock</h3>
+<hr/>
+<table border=1 cellspacing=0 cellpadding=2>
+<caption>Constants</caption>
+<tr><th>Type</th><th>NameAndValue</th></tr>
+</table><table border=1 cellspacing=0 cellpadding=2>
+<caption>Methods</caption>
+<tr><th>Type</th><th>Description</th></tr>
+<tr><td class='mtd_type'>Function</td><td class='mtd_desc'>getParent()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Instruction</td><td class='mtd_desc'>insertBefore(Instruction before, Instruction inst)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Instruction</td><td class='mtd_desc'>getLastInst()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Instruction</td><td class='mtd_desc'>getTerminator()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>dump()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>size()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Boolean</td><td class='mtd_desc'>empty()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>BasicBlock</td><td class='mtd_desc'>create(Function parent, String name)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+</table><h3>Module</h3>
+<hr/>
+<table border=1 cellspacing=0 cellpadding=2>
+<caption>Constants</caption>
+<tr><th>Type</th><th>NameAndValue</th></tr>
+</table><table border=1 cellspacing=0 cellpadding=2>
+<caption>Methods</caption>
+<tr><th>Type</th><th>Description</th></tr>
+<tr><td class='mtd_type'>Module</td><td class='mtd_desc'>new(String name)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Type</td><td class='mtd_desc'>getTypeByName(String name)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>dump()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Function</td><td class='mtd_desc'>getOrInsertFunction(String name, FunctionType fnTy)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>ExecutionEngine</td><td class='mtd_desc'>createExecutionEngine(Int optLevel)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+</table><h3>Function</h3>
+<hr/>
+<table border=1 cellspacing=0 cellpadding=2>
+<caption>Constants</caption>
+<tr><th>Type</th><th>NameAndValue</th></tr>
+</table><table border=1 cellspacing=0 cellpadding=2>
+<caption>Methods</caption>
+<tr><th>Type</th><th>Description</th></tr>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>dump()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Function</td><td class='mtd_desc'>create(String name, FunctionType fnTy, Module m, Int linkage)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>addFnAttr(Int attributes)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Value[]</td><td class='mtd_desc'>getArguments()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+</table><h3>PHINode</h3>
+<hr/>
+<table border=1 cellspacing=0 cellpadding=2>
+<caption>Constants</caption>
+<tr><th>Type</th><th>NameAndValue</th></tr>
+</table><table border=1 cellspacing=0 cellpadding=2>
+<caption>Methods</caption>
+<tr><th>Type</th><th>Description</th></tr>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>addIncoming(Value v, BasicBlock bb)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+</table><h3>ExecutionEngine</h3>
+<hr/>
+<table border=1 cellspacing=0 cellpadding=2>
+<caption>Constants</caption>
+<tr><th>Type</th><th>NameAndValue</th></tr>
+</table><table border=1 cellspacing=0 cellpadding=2>
+<caption>Methods</caption>
+<tr><th>Type</th><th>Description</th></tr>
+<tr><td class='mtd_type'>NativeFunction</td><td class='mtd_desc'>getPointerToFunction(Function func)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>addGlobalMapping(GlobalVariable g, Int addr)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>TargetData</td><td class='mtd_desc'>getTargetData()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+</table><h3>Intrinsic</h3>
+<hr/>
+<table border=1 cellspacing=0 cellpadding=2>
+<caption>Constants</caption>
+<tr><th>Type</th><th>NameAndValue</th></tr>
+<tr><td class='const_type'>Int</td><td>Pow = 181</td></tr>
+<tr><td class='const_type'>Int</td><td>Sqrt = 465</td></tr>
+<tr><td class='const_type'>Int</td><td>Exp = 158</td></tr>
+<tr><td class='const_type'>Int</td><td>Log10 = 173</td></tr>
+<tr><td class='const_type'>Int</td><td>Log = 172</td></tr>
+<tr><td class='const_type'>Int</td><td>Sin = 381</td></tr>
+<tr><td class='const_type'>Int</td><td>Cos = 138</td></tr>
+</table><table border=1 cellspacing=0 cellpadding=2>
+<caption>Methods</caption>
+<tr><th>Type</th><th>Description</th></tr>
+<tr><td class='mtd_type'>FunctionType</td><td class='mtd_desc'>getType(Int id, Type[] args)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Function</td><td class='mtd_desc'>getDeclaration(Module m, Int id, Type[] args)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+</table><h3>LLVM</h3>
+<hr/>
+<table border=1 cellspacing=0 cellpadding=2>
+<caption>Constants</caption>
+<tr><th>Type</th><th>NameAndValue</th></tr>
+</table><table border=1 cellspacing=0 cellpadding=2>
+<caption>Methods</caption>
+<tr><th>Type</th><th>Description</th></tr>
+<tr><td class='mtd_type'>FunctionPass</td><td class='mtd_desc'>createDomPrinterPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>FunctionPass</td><td class='mtd_desc'>createDomOnlyPrinterPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>FunctionPass</td><td class='mtd_desc'>createDomViewerPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>FunctionPass</td><td class='mtd_desc'>createDomOnlyViewerPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>FunctionPass</td><td class='mtd_desc'>createPostDomPrinterPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>FunctionPass</td><td class='mtd_desc'>createPostDomOnlyPrinterPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>FunctionPass</td><td class='mtd_desc'>createPostDomViewerPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>FunctionPass</td><td class='mtd_desc'>createPostDomOnlyViewerPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Pass</td><td class='mtd_desc'>createGlobalsModRefPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Pass</td><td class='mtd_desc'>createAliasDebugger()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>ModulePass</td><td class='mtd_desc'>createAliasAnalysisCounterPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>FunctionPass</td><td class='mtd_desc'>createAAEvalPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>FunctionPass</td><td class='mtd_desc'>createLibCallAliasAnalysisPass(LibCallInfo lci)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>FunctionPass</td><td class='mtd_desc'>createScalarEvolutionAliasAnalysisPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>ModulePass</td><td class='mtd_desc'>createProfileLoaderPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>FunctionPass</td><td class='mtd_desc'>createProfileEstimatorPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>FunctionPass</td><td class='mtd_desc'>createProfileVerifierPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>ModulePass</td><td class='mtd_desc'>createPathProfileLoaderPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>ModulePass</td><td class='mtd_desc'>createPathProfileVerifierPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>FunctionPass</td><td class='mtd_desc'>createLazyValueInfoPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>LoopPass</td><td class='mtd_desc'>createLoopDependenceAnalysisPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>FunctionPass</td><td class='mtd_desc'>createInstCountPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>FunctionPass</td><td class='mtd_desc'>createDbgInfoPrinterPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>FunctionPass</td><td class='mtd_desc'>createRegionInfoPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>ModulePass</td><td class='mtd_desc'>createModuleDebugInfoPrinterPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>FunctionPass</td><td class='mtd_desc'>createMemDepPrinter()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>FunctionPass</td><td class='mtd_desc'>createPostDomTree()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>FunctionPass</td><td class='mtd_desc'>createRegionViewerPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>FunctionPass</td><td class='mtd_desc'>createRegionOnlyViewerPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>FunctionPass</td><td class='mtd_desc'>createRegionPrinterPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>FunctionPass</td><td class='mtd_desc'>createRegionOnlyPrinterPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>FunctionPass</td><td class='mtd_desc'>createLintPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>ModulePass</td><td class='mtd_desc'>createStripSymbolsPass(Boolean onlyDebugInfo)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>ModulePass</td><td class='mtd_desc'>createStripNonDebugSymbolsPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>ModulePass</td><td class='mtd_desc'>createStripDeadDebugInfoPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>ModulePass</td><td class='mtd_desc'>createConstantMergePass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>ModulePass</td><td class='mtd_desc'>createGlobalOptimizerPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>ModulePass</td><td class='mtd_desc'>createGlobalDCEPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Pass</td><td class='mtd_desc'>createFunctionInliningPass(Int threshold)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Pass</td><td class='mtd_desc'>createAlwaysInlinerPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Pass</td><td class='mtd_desc'>createPruneEHPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>ModulePass</td><td class='mtd_desc'>createInternalizePass(Boolean allButMain)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>ModulePass</td><td class='mtd_desc'>createDeadArgEliminationPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Pass</td><td class='mtd_desc'>createArgumentPromotionPass(Int maxElements)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>ModulePass</td><td class='mtd_desc'>createIPConstantPropagationPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>ModulePass</td><td class='mtd_desc'>createIPSCCPPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Pass</td><td class='mtd_desc'>createLoopExtractorPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Pass</td><td class='mtd_desc'>createSingleLoopExtractorPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>ModulePass</td><td class='mtd_desc'>createBlockExtractorPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>ModulePass</td><td class='mtd_desc'>createStripDeadPrototypesPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Pass</td><td class='mtd_desc'>createFunctionAttrsPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>ModulePass</td><td class='mtd_desc'>createMergeFunctionsPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>ModulePass</td><td class='mtd_desc'>createPartialInliningPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>FunctionPass</td><td class='mtd_desc'>createConstantPropagationPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>FunctionPass</td><td class='mtd_desc'>createSCCPPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Pass</td><td class='mtd_desc'>createDeadInstEliminationPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>FunctionPass</td><td class='mtd_desc'>createDeadCodeEliminationPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>FunctionPass</td><td class='mtd_desc'>createDeadStoreEliminationPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>FunctionPass</td><td class='mtd_desc'>createAggressiveDCEPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>FunctionPass</td><td class='mtd_desc'>createScalarReplAggregatesPass(Int threshold)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Pass</td><td class='mtd_desc'>createIndVarSimplifyPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>FunctionPass</td><td class='mtd_desc'>createInstructionCombiningPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Pass</td><td class='mtd_desc'>createLICMPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Pass</td><td class='mtd_desc'>createLoopUnswitchPass(Boolean optimizeForSize)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Pass</td><td class='mtd_desc'>createLoopInstSimplifyPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Pass</td><td class='mtd_desc'>createLoopUnrollPass(Int threshold, Int count, Int allowPartial)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Pass</td><td class='mtd_desc'>createLoopRotatePass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Pass</td><td class='mtd_desc'>createLoopIdiomPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>FunctionPass</td><td class='mtd_desc'>createPromoteMemoryToRegisterPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>FunctionPass</td><td class='mtd_desc'>createDemoteRegisterToMemoryPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>FunctionPass</td><td class='mtd_desc'>createReassociatePass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>FunctionPass</td><td class='mtd_desc'>createJumpThreadingPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>FunctionPass</td><td class='mtd_desc'>createCFGSimplificationPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>FunctionPass</td><td class='mtd_desc'>createBreakCriticalEdgesPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Pass</td><td class='mtd_desc'>createLoopSimplifyPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>FunctionPass</td><td class='mtd_desc'>createTailCallEliminationPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>FunctionPass</td><td class='mtd_desc'>createLowerSwitchPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>FunctionPass</td><td class='mtd_desc'>createBlockPlacementPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Pass</td><td class='mtd_desc'>createLCSSAPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>FunctionPass</td><td class='mtd_desc'>createEarlyCSEPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>FunctionPass</td><td class='mtd_desc'>createGVNPass(Boolean noLoads)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>FunctionPass</td><td class='mtd_desc'>createMemCpyOptPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Pass</td><td class='mtd_desc'>createLoopDeletionPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>FunctionPass</td><td class='mtd_desc'>createSimplifyLibCallsPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>FunctionPass</td><td class='mtd_desc'>createInstructionNamerPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>FunctionPass</td><td class='mtd_desc'>createSinkingPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Pass</td><td class='mtd_desc'>createLowerAtomicPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Pass</td><td class='mtd_desc'>createCorrelatedValuePropagationPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Pass</td><td class='mtd_desc'>createObjCARCExpandPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Pass</td><td class='mtd_desc'>createObjCARCContractPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Pass</td><td class='mtd_desc'>createObjCARCOptPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>FunctionPass</td><td class='mtd_desc'>createInstructionSimplifierPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>FunctionPass</td><td class='mtd_desc'>createLowerExpectIntrinsicPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Pass</td><td class='mtd_desc'>createUnifyFunctionExitNodesPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>ImmutablePass</td><td class='mtd_desc'>createTypeBasedAliasAnalysisPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>ImmutablePass</td><td class='mtd_desc'>createBasicAliasAnalysisPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>FunctionPass</td><td class='mtd_desc'>createVerifierPass()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Module</td><td class='mtd_desc'>parseBitcodeFile(String bcfile)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+</table><h3>PassManager</h3>
+<hr/>
+<table border=1 cellspacing=0 cellpadding=2>
+<caption>Constants</caption>
+<tr><th>Type</th><th>NameAndValue</th></tr>
+</table><table border=1 cellspacing=0 cellpadding=2>
+<caption>Methods</caption>
+<tr><th>Type</th><th>Description</th></tr>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>run(Module m)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>PassManager</td><td class='mtd_desc'>new()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>addPass(Pass p)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>addImmutablePass(ImmutablePass p)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>addFunctionPass(FunctionPass p)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>addModulePass(ModulePass p)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>add(ImmutablePass p)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>add(FunctionPass p)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>add(ModulePass p)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>add(Pass p)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+</table><h3>FunctionPassManager</h3>
+<hr/>
+<table border=1 cellspacing=0 cellpadding=2>
+<caption>Constants</caption>
+<tr><th>Type</th><th>NameAndValue</th></tr>
+</table><table border=1 cellspacing=0 cellpadding=2>
+<caption>Methods</caption>
+<tr><th>Type</th><th>Description</th></tr>
+<tr><td class='mtd_type'>FunctionPassManager</td><td class='mtd_desc'>new(Module m)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>add(Pass p)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>run(Function func)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>doInitialization()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+</table><h3>PassManagerBuilder</h3>
+<hr/>
+<table border=1 cellspacing=0 cellpadding=2>
+<caption>Constants</caption>
+<tr><th>Type</th><th>NameAndValue</th></tr>
+</table><table border=1 cellspacing=0 cellpadding=2>
+<caption>Methods</caption>
+<tr><th>Type</th><th>Description</th></tr>
+<tr><td class='mtd_type'>PassManagerBuilder</td><td class='mtd_desc'>new()</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>void</td><td class='mtd_desc'>populateModulePassManager(PassManager manager)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+</table><h3>DynamicLibrary</h3>
+<hr/>
+<table border=1 cellspacing=0 cellpadding=2>
+<caption>Constants</caption>
+<tr><th>Type</th><th>NameAndValue</th></tr>
+</table><table border=1 cellspacing=0 cellpadding=2>
+<caption>Methods</caption>
+<tr><th>Type</th><th>Description</th></tr>
+<tr><td class='mtd_type'>Boolean</td><td class='mtd_desc'>loadLibraryPermanently(String libname)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+<tr><td class='mtd_type'>Int</td><td class='mtd_desc'>searchForAddressOfSymbol(String fname)</td></tr>
+<tr><td></td><td class='mtd_doc'></td>
+</table></body></html>
